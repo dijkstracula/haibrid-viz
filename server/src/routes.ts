@@ -1,7 +1,5 @@
 import { Request, Response } from "express";
 
 export const index = (req: Request, res: Response) => {
-    res.render("home", {
-        title: "Home"
-    });
+    res.json({ "msg": "It works, with JSON!"});
 };

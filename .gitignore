@@ -1,9 +1,8 @@
 # Build
-public/css/main.css
 
-npm-debug.log
+**/npm-debug.log
 
-.env
-node_modules
+**/.env
+**/node_modules
 
-dist/
+server/dist/
