@@ -1,0 +1,9 @@
+# Build
+public/css/main.css
+
+npm-debug.log
+
+.env
+node_modules
+
+dist/
