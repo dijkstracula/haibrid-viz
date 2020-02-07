@@ -3,24 +3,21 @@
   "version": "1.0.0",
   "description": "Visualizer for the HAIbrid kv store",
   "scripts": {
+    "dev": "concurrently \"npm run serve\" \"npm run client\"",
     "start": "npm run serve",
+    "client": "cd client && npm start",
     "prestart": "npm run build",
-    "build": "tsc && npm run lint && npm run copy-static-assets",
+    "build": "tsc && npm run lint",
     "serve": "node dist/index.js",
     "serve-debug": "nodemon --inspect dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
-    "build-sass": "node-sass src/public/css/main.scss dist/public/css/main.css",
-    "copy-static-assets": "ts-node copy-static-assets.ts"
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
   },
-  "author": "",
+  "author": "Nathan Taylor <nbtaylor@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@types/d3": "^5.7.2",
-    "@types/pug": "^2.0.4",
-    "@types/react": "^16.9.19",
-    "@types/shelljs": "^0.8.6",
-    "d3": "^5.15.0",
+    "@types/cors": "^2.8.6",
+    "cors": "^2.8.5",
     "eslint": "^6.8.0",
     "express": "^4.17.1",
     "node-sass": "^4.13.1",
@@ -35,6 +32,7 @@
     "@types/express": "^4.17.2",
     "@types/node": "^13.7.0",
     "@typescript-eslint/eslint-plugin": "^2.19.0",
-    "@typescript-eslint/parser": "^2.19.0"
+    "@typescript-eslint/parser": "^2.19.0",
+    "concurrently": "^5.1.0"
   }
 }
