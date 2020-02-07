@@ -1,0 +1,38 @@
+{
+  "name": "haibrid-viz",
+  "version": "1.0.0",
+  "description": "Visualizer for the HAIbrid kv store",
+  "scripts": {
+    "start": "npm run serve",
+    "prestart": "npm run build",
+    "build": "tsc && npm run lint && npm run copy-static-assets",
+    "serve": "node dist/index.js",
+    "serve-debug": "nodemon --inspect dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix",
+    "build-sass": "node-sass src/public/css/main.scss dist/public/css/main.css",
+    "copy-static-assets": "ts-node copy-static-assets.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/d3": "^5.7.2",
+    "@types/pug": "^2.0.4",
+    "@types/shelljs": "^0.8.6",
+    "d3": "^5.15.0",
+    "eslint": "^6.8.0",
+    "express": "^4.17.1",
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.2",
+    "pug": "^2.0.4",
+    "shelljs": "^0.8.3",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0"
+  }
+}
