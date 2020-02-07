@@ -17,7 +17,7 @@ $ sudo apt-get install -y nodejs
 # Install dependencies
 
 ```
-$ npm install
+$ npm run install
 ```
 
 # Run
