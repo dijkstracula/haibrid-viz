@@ -10,12 +10,13 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "http-proxy-middleware": "^0.20.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.1",
     "typescript": "~3.7.2"
   },
-  "proxy": "http://[::1]:3001",
+  "proxy": "http://local.test:3000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
