@@ -5,10 +5,8 @@ import CannedSource from "./source";
 import WebSocket from "ws";
 
 // 
+
 const source = new CannedSource("../data/test.json");
-source.on("message", function(s: Sample) {
-    console.log(s);
-});
 
 // Websocket server
 const wss = new WebSocket.Server({ port: 3030 });
@@ -21,7 +19,12 @@ wss.on("connection", function connection(ws: WebSocket) {
     ws.on("message", function incoming(data: string) {
         console.log("TODO: received " + data);
     });
+
+    source.on("message", function(s: Sample) {
+        ws.send(JSON.stringify({"msg": "Incoming sample", "sample": s}));
+    });
 });
+
 
 // HTTP server (don't know if we actually need this, in the end?)
 
