@@ -5,10 +5,10 @@ import cors from "cors";
 const app = express();
 
 app.set("port", process.env.PORT || 3001);
-app.use(cors);
+//app.use(cors);
 
 // routes
 import * as routes from "./routes";
-app.get("/", routes.index);
+app.get("/status", routes.status);
 
 export default app;
