@@ -9,7 +9,7 @@ export default class App extends Component<{}, AppState> {
   public state = { msg: "Loading..." };
 
   componentDidMount() {
-    fetch("/api/status")
+    fetch("/status",)
     .then(res => res.text())
     .then(json => this.setState({msg: json}))
   }

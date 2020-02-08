@@ -1,0 +1,15 @@
+{
+  "name": "haibrid-viz",
+  "version": "1.0.0",
+  "description": "Visualizer for the HAIbrid kv store",
+  "scripts": {
+    "install": "concurrently \"cd server && npm install\" \"cd client && npm install\"",
+    "dev": "concurrently \"cd server && npm start\" \"cd client && npm start\""
+  },
+  "author": "Nathan Taylor <nbtaylor@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "devDependencies": {}
+}
