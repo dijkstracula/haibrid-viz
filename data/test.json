@@ -1,50 +1,7920 @@
-[
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "118568","type": "hs_hash"},{"min": "118568","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 118567, "xput": 1197646, "lat": 2249, "mem": 349388},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "243354","type": "hs_hash"},{"min": "243354","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 124786, "xput": 1260464, "lat": 2137, "mem": 355532},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "382492","type": "hs_hash"},{"min": "382492","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 139138, "xput": 1405434, "lat": 1916, "mem": 355532},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "493850","type": "hs_hash"},{"min": "493850","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 111358, "xput": 1124828, "lat": 2395, "mem": 367820},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "633413","type": "hs_hash"},{"min": "633413","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 139563, "xput": 1409727, "lat": 1911, "mem": 367820},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "771549","type": "hs_hash"},{"min": "771549","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 138136, "xput": 1395313, "lat": 1930, "mem": 367820},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "907287","type": "hs_hash"},{"min": "907287","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 135738, "xput": 1371091, "lat": 1964, "mem": 367820},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "990043","type": "hs_hash"},{"min": "990043","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 82756, "xput": 835919, "lat": 3222, "mem": 392396},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "1131205","type": "hs_hash"},{"min": "1131205","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 141162, "xput": 1425878, "lat": 1889, "mem": 392396},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "1271155","type": "hs_hash"},{"min": "1271155","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 139950, "xput": 1413636, "lat": 1905, "mem": 392396},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "1412053","type": "hs_hash"},{"min": "1412053","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 140898, "xput": 1423212, "lat": 1893, "mem": 392396},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "1553228","type": "hs_hash"},{"min": "1553228","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 141175, "xput": 1426010, "lat": 1889, "mem": 392396},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "1698487","type": "hs_hash"},{"min": "1698487","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 145259, "xput": 1467262, "lat": 1836, "mem": 392396},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "1843161","type": "hs_hash"},{"min": "1843161","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 144674, "xput": 1461353, "lat": 1843, "mem": 392396},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "2027006","type": "hs_hash"},{"min": "2027006","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 139568, "xput": 1409777, "lat": 1910, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "2178879","type": "hs_hash"},{"min": "2178879","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 151873, "xput": 1534070, "lat": 1756, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "2329809","type": "hs_hash"},{"min": "2329809","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 150930, "xput": 1524545, "lat": 1767, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "2484032","type": "hs_hash"},{"min": "2484032","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 154223, "xput": 1557808, "lat": 1729, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "2639170","type": "hs_hash"},{"min": "2639170","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 155138, "xput": 1567050, "lat": 1719, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "2794560","type": "hs_hash"},{"min": "2794560","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 155390, "xput": 1569596, "lat": 1716, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "2949712","type": "hs_hash"},{"min": "2949712","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 155152, "xput": 1567191, "lat": 1719, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "3107741","type": "hs_hash"},{"min": "3107741","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 158029, "xput": 1596252, "lat": 1687, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "3267126","type": "hs_hash"},{"min": "3267126","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 159385, "xput": 1609949, "lat": 1673, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "3416900","type": "hs_hash"},{"min": "3416900","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 149774, "xput": 1512868, "lat": 1780, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "3571443","type": "hs_hash"},{"min": "3571443","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 154543, "xput": 1561040, "lat": 1725, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "3731818","type": "hs_hash"},{"min": "3731818","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 160375, "xput": 1619949, "lat": 1663, "mem": 441548},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "3774875","type": "hs_hash"},{"min": "3774875","max": "18446744073709551615","type": "google_btree"}],"ts": 174, "ops": 43057, "xput": 247454, "lat": 10895, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "3929336","type": "hs_hash"},{"min": "3929336","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 154461, "xput": 1560212, "lat": 1726, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "4089677","type": "hs_hash"},{"min": "4089677","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 160341, "xput": 1619606, "lat": 1663, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "4249091","type": "hs_hash"},{"min": "4249091","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 159414, "xput": 1610242, "lat": 1673, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "4410360","type": "hs_hash"},{"min": "4410360","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 161269, "xput": 1628979, "lat": 1653, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "4574403","type": "hs_hash"},{"min": "4574403","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 164043, "xput": 1657000, "lat": 1625, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "4740416","type": "hs_hash"},{"min": "4740416","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 166013, "xput": 1676899, "lat": 1606, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "4907051","type": "hs_hash"},{"min": "4907051","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 166635, "xput": 1683181, "lat": 1600, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "5075219","type": "hs_hash"},{"min": "5075219","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 168168, "xput": 1698666, "lat": 1585, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "5246015","type": "hs_hash"},{"min": "5246015","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 170796, "xput": 1725212, "lat": 1561, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "5417281","type": "hs_hash"},{"min": "5417281","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 171266, "xput": 1729959, "lat": 1557, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "5586833","type": "hs_hash"},{"min": "5586833","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 169552, "xput": 1712646, "lat": 1573, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "5764212","type": "hs_hash"},{"min": "5764212","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 177379, "xput": 1791707, "lat": 1503, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "5945944","type": "hs_hash"},{"min": "5945944","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 181732, "xput": 1835676, "lat": 1467, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "6132183","type": "hs_hash"},{"min": "6132183","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 186239, "xput": 1881202, "lat": 1432, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "6314945","type": "hs_hash"},{"min": "6314945","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 182762, "xput": 1846080, "lat": 1459, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "6500736","type": "hs_hash"},{"min": "6500736","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 185791, "xput": 1876676, "lat": 1435, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "6693092","type": "hs_hash"},{"min": "6693092","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 192356, "xput": 1942989, "lat": 1386, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "6881772","type": "hs_hash"},{"min": "6881772","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 188680, "xput": 1905858, "lat": 1414, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "7072947","type": "hs_hash"},{"min": "7072947","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 191175, "xput": 1931060, "lat": 1395, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "7268002","type": "hs_hash"},{"min": "7268002","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 195055, "xput": 1970252, "lat": 1367, "mem": 539852},
-{"policy_engine": {"credits": 20000000},"arcs":[{"min": "0","max": "7464457","type": "hs_hash"},{"min": "7464457","max": "18446744073709551615","type": "google_btree"}],"ts": 99, "ops": 196455, "xput": 1984393, "lat": 1357, "mem": 539852}
-]
+{
+  "git-rev": "294c622cdd6aceb88106798f98c82f44c14d9727",
+  "hostname": "nathan1604",
+  "phases": [
+    {
+      "begin": 0,
+      "end": 30000,
+      "name": "e"
+    }
+  ],
+  "runs": {
+    "split": [
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "34882",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "34882",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 24268026
+          }
+        },
+        "lat": 7630,
+        "mem": 344356,
+        "ops": 34952,
+        "total_ops": 34952,
+        "total_ts": 99,
+        "ts": 99,
+        "xput": 353050
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "71008",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "71008",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 28661219
+          }
+        },
+        "lat": 7382,
+        "mem": 345520,
+        "ops": 36126,
+        "total_ops": 71078,
+        "total_ts": 198,
+        "ts": 99,
+        "xput": 364909
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "106913",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "106913",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 33024550
+          }
+        },
+        "lat": 7428,
+        "mem": 346684,
+        "ops": 35905,
+        "total_ops": 106983,
+        "total_ts": 297,
+        "ts": 99,
+        "xput": 362676
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "142779",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "142779",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 37388410
+          }
+        },
+        "lat": 7436,
+        "mem": 347844,
+        "ops": 35866,
+        "total_ops": 142849,
+        "total_ts": 396,
+        "ts": 99,
+        "xput": 362282
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "178076",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "178076",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 41678275
+          }
+        },
+        "lat": 7556,
+        "mem": 348888,
+        "ops": 35294,
+        "total_ops": 178143,
+        "total_ts": 495,
+        "ts": 99,
+        "xput": 356505
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "213587",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "213587",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 46004881
+          }
+        },
+        "lat": 7510,
+        "mem": 350048,
+        "ops": 35511,
+        "total_ops": 213654,
+        "total_ts": 594,
+        "ts": 99,
+        "xput": 358696
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "249253",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "249253",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 50354289
+          }
+        },
+        "lat": 7477,
+        "mem": 351096,
+        "ops": 35666,
+        "total_ops": 249320,
+        "total_ts": 693,
+        "ts": 99,
+        "xput": 360262
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "285285",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "285285",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 54734415
+          }
+        },
+        "lat": 7402,
+        "mem": 352256,
+        "ops": 36032,
+        "total_ops": 285352,
+        "total_ts": 792,
+        "ts": 99,
+        "xput": 363959
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "320398",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "320398",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 59002394
+          }
+        },
+        "lat": 7595,
+        "mem": 353424,
+        "ops": 35113,
+        "total_ops": 320465,
+        "total_ts": 891,
+        "ts": 99,
+        "xput": 354676
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "355740",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "355740",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 63302366
+          }
+        },
+        "lat": 7546,
+        "mem": 354468,
+        "ops": 35342,
+        "total_ops": 355807,
+        "total_ts": 990,
+        "ts": 99,
+        "xput": 356989
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "385754",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "385754",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 66956052
+          }
+        },
+        "lat": 8886,
+        "mem": 355396,
+        "ops": 30013,
+        "total_ops": 385820,
+        "total_ts": 1089,
+        "ts": 99,
+        "xput": 303161
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "417879",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "417879",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 70860488
+          }
+        },
+        "lat": 8302,
+        "mem": 356444,
+        "ops": 32124,
+        "total_ops": 417944,
+        "total_ts": 1188,
+        "ts": 99,
+        "xput": 324484
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "452462",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "452462",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 75065066
+          }
+        },
+        "lat": 7712,
+        "mem": 357488,
+        "ops": 34582,
+        "total_ops": 452526,
+        "total_ts": 1287,
+        "ts": 99,
+        "xput": 349313
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "487114",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "487114",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 79272718
+          }
+        },
+        "lat": 7696,
+        "mem": 358536,
+        "ops": 34652,
+        "total_ops": 487178,
+        "total_ts": 1386,
+        "ts": 99,
+        "xput": 350020
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "520838",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "520838",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 83369739
+          }
+        },
+        "lat": 7908,
+        "mem": 359584,
+        "ops": 33723,
+        "total_ops": 520901,
+        "total_ts": 1485,
+        "ts": 99,
+        "xput": 340636
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "554822",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "554822",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 87509408
+          }
+        },
+        "lat": 7848,
+        "mem": 360636,
+        "ops": 33983,
+        "total_ops": 554884,
+        "total_ts": 1584,
+        "ts": 99,
+        "xput": 343262
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "589567",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "589567",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 91730979
+          }
+        },
+        "lat": 7676,
+        "mem": 361800,
+        "ops": 34744,
+        "total_ops": 589628,
+        "total_ts": 1683,
+        "ts": 99,
+        "xput": 350949
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "624069",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "624069",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 95923012
+          }
+        },
+        "lat": 7730,
+        "mem": 362848,
+        "ops": 34502,
+        "total_ops": 624130,
+        "total_ts": 1782,
+        "ts": 99,
+        "xput": 348505
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "658304",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "658304",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 100075491
+          }
+        },
+        "lat": 7790,
+        "mem": 363900,
+        "ops": 34235,
+        "total_ops": 658365,
+        "total_ts": 1881,
+        "ts": 99,
+        "xput": 345808
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "692194",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "692194",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 104208762
+          }
+        },
+        "lat": 7869,
+        "mem": 364952,
+        "ops": 33890,
+        "total_ops": 692255,
+        "total_ts": 1980,
+        "ts": 99,
+        "xput": 342323
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "725674",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "725674",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 108276117
+          }
+        },
+        "lat": 7967,
+        "mem": 365996,
+        "ops": 33477,
+        "total_ops": 725732,
+        "total_ts": 2079,
+        "ts": 99,
+        "xput": 338151
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "759419",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "759419",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 112383927
+          }
+        },
+        "lat": 7903,
+        "mem": 367052,
+        "ops": 33744,
+        "total_ops": 759476,
+        "total_ts": 2178,
+        "ts": 99,
+        "xput": 340848
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "792738",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "792738",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 116444667
+          }
+        },
+        "lat": 8005,
+        "mem": 368096,
+        "ops": 33318,
+        "total_ops": 792794,
+        "total_ts": 2277,
+        "ts": 99,
+        "xput": 336545
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "826277",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "826277",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 120519338
+          }
+        },
+        "lat": 7952,
+        "mem": 369148,
+        "ops": 33538,
+        "total_ops": 826332,
+        "total_ts": 2376,
+        "ts": 99,
+        "xput": 338767
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "859433",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "859433",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 124543965
+          }
+        },
+        "lat": 8044,
+        "mem": 370192,
+        "ops": 33156,
+        "total_ops": 859488,
+        "total_ts": 2475,
+        "ts": 99,
+        "xput": 334909
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "892692",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "892692",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 128582791
+          }
+        },
+        "lat": 8019,
+        "mem": 371240,
+        "ops": 33259,
+        "total_ops": 892747,
+        "total_ts": 2574,
+        "ts": 99,
+        "xput": 335949
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "925396",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "925396",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 132555837
+          }
+        },
+        "lat": 8155,
+        "mem": 372168,
+        "ops": 32702,
+        "total_ops": 925449,
+        "total_ts": 2673,
+        "ts": 99,
+        "xput": 330323
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "958709",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "958709",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 136606721
+          }
+        },
+        "lat": 8006,
+        "mem": 373228,
+        "ops": 33313,
+        "total_ops": 958762,
+        "total_ts": 2772,
+        "ts": 99,
+        "xput": 336494
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "991824",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "991824",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 140636219
+          }
+        },
+        "lat": 8054,
+        "mem": 374284,
+        "ops": 33114,
+        "total_ops": 991876,
+        "total_ts": 2871,
+        "ts": 99,
+        "xput": 334484
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1025068",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1025068",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 144674690
+          }
+        },
+        "lat": 8022,
+        "mem": 375332,
+        "ops": 33244,
+        "total_ops": 1025120,
+        "total_ts": 2970,
+        "ts": 99,
+        "xput": 335797
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1056441",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1056441",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 148478026
+          }
+        },
+        "lat": 8501,
+        "mem": 376268,
+        "ops": 31372,
+        "total_ops": 1056492,
+        "total_ts": 3069,
+        "ts": 99,
+        "xput": 316888
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1089742",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1089742",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 152526711
+          }
+        },
+        "lat": 8009,
+        "mem": 377308,
+        "ops": 33301,
+        "total_ops": 1089793,
+        "total_ts": 3168,
+        "ts": 99,
+        "xput": 336373
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1122361",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1122361",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 156491455
+          }
+        },
+        "lat": 8176,
+        "mem": 378356,
+        "ops": 32619,
+        "total_ops": 1122412,
+        "total_ts": 3267,
+        "ts": 99,
+        "xput": 329484
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1154556",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1154556",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 160399258
+          }
+        },
+        "lat": 8284,
+        "mem": 379292,
+        "ops": 32195,
+        "total_ops": 1154607,
+        "total_ts": 3366,
+        "ts": 99,
+        "xput": 325202
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1187342",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1187342",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 164397528
+          }
+        },
+        "lat": 8134,
+        "mem": 380340,
+        "ops": 32786,
+        "total_ops": 1187393,
+        "total_ts": 3465,
+        "ts": 99,
+        "xput": 331171
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1219253",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1219253",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 168281644
+          }
+        },
+        "lat": 8358,
+        "mem": 381268,
+        "ops": 31910,
+        "total_ops": 1219303,
+        "total_ts": 3564,
+        "ts": 99,
+        "xput": 322323
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1251741",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1251741",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 172231917
+          }
+        },
+        "lat": 8209,
+        "mem": 382316,
+        "ops": 32488,
+        "total_ops": 1251791,
+        "total_ts": 3663,
+        "ts": 99,
+        "xput": 328161
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1283976",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1283976",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 176147642
+          }
+        },
+        "lat": 8273,
+        "mem": 383244,
+        "ops": 32235,
+        "total_ops": 1284026,
+        "total_ts": 3762,
+        "ts": 99,
+        "xput": 325606
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1316083",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1316083",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 180049036
+          }
+        },
+        "lat": 8307,
+        "mem": 384292,
+        "ops": 32107,
+        "total_ops": 1316133,
+        "total_ts": 3861,
+        "ts": 99,
+        "xput": 324313
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1348195",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1348195",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 183957617
+          }
+        },
+        "lat": 8305,
+        "mem": 385344,
+        "ops": 32112,
+        "total_ops": 1348245,
+        "total_ts": 3960,
+        "ts": 99,
+        "xput": 324363
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1379243",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1379243",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 187728859
+          }
+        },
+        "lat": 8590,
+        "mem": 386280,
+        "ops": 31048,
+        "total_ops": 1379293,
+        "total_ts": 4059,
+        "ts": 99,
+        "xput": 313616
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1410729",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1410729",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 191556678
+          }
+        },
+        "lat": 8470,
+        "mem": 387224,
+        "ops": 31486,
+        "total_ops": 1410779,
+        "total_ts": 4158,
+        "ts": 99,
+        "xput": 318040
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1441010",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1441010",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 195248960
+          }
+        },
+        "lat": 8807,
+        "mem": 388152,
+        "ops": 30281,
+        "total_ops": 1441060,
+        "total_ts": 4257,
+        "ts": 99,
+        "xput": 305868
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1470299",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1470299",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 198807326
+          }
+        },
+        "lat": 9106,
+        "mem": 389076,
+        "ops": 29289,
+        "total_ops": 1470349,
+        "total_ts": 4356,
+        "ts": 99,
+        "xput": 295848
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1499314",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1499314",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 202334823
+          }
+        },
+        "lat": 9192,
+        "mem": 389892,
+        "ops": 29014,
+        "total_ops": 1499363,
+        "total_ts": 4455,
+        "ts": 99,
+        "xput": 293070
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1529353",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1529353",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 205997498
+          }
+        },
+        "lat": 8879,
+        "mem": 390828,
+        "ops": 30038,
+        "total_ops": 1529401,
+        "total_ts": 4554,
+        "ts": 99,
+        "xput": 303414
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1560771",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1560771",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 209816087
+          }
+        },
+        "lat": 8489,
+        "mem": 391884,
+        "ops": 31418,
+        "total_ops": 1560819,
+        "total_ts": 4653,
+        "ts": 99,
+        "xput": 317353
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1592148",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1592148",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 213629308
+          }
+        },
+        "lat": 8500,
+        "mem": 392816,
+        "ops": 31377,
+        "total_ops": 1592196,
+        "total_ts": 4752,
+        "ts": 99,
+        "xput": 316939
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1622180",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1622180",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 217286775
+          }
+        },
+        "lat": 8880,
+        "mem": 393744,
+        "ops": 30032,
+        "total_ops": 1622228,
+        "total_ts": 4851,
+        "ts": 99,
+        "xput": 303353
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1653579",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1653579",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 221118964
+          }
+        },
+        "lat": 8494,
+        "mem": 394684,
+        "ops": 31399,
+        "total_ops": 1653627,
+        "total_ts": 4950,
+        "ts": 99,
+        "xput": 317161
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1684863",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1684863",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 224924779
+          }
+        },
+        "lat": 8525,
+        "mem": 395616,
+        "ops": 31284,
+        "total_ops": 1684911,
+        "total_ts": 5049,
+        "ts": 99,
+        "xput": 316000
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1715807",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1715807",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 228691923
+          }
+        },
+        "lat": 8619,
+        "mem": 396668,
+        "ops": 30944,
+        "total_ops": 1715855,
+        "total_ts": 5148,
+        "ts": 99,
+        "xput": 312565
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1746815",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1746815",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 232458784
+          }
+        },
+        "lat": 8601,
+        "mem": 397596,
+        "ops": 31006,
+        "total_ops": 1746861,
+        "total_ts": 5247,
+        "ts": 99,
+        "xput": 313191
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1777292",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1777292",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 236153570
+          }
+        },
+        "lat": 8751,
+        "mem": 398528,
+        "ops": 30476,
+        "total_ops": 1777337,
+        "total_ts": 5346,
+        "ts": 99,
+        "xput": 307838
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1808247",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1808247",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 239912614
+          }
+        },
+        "lat": 8615,
+        "mem": 399452,
+        "ops": 30955,
+        "total_ops": 1808292,
+        "total_ts": 5445,
+        "ts": 99,
+        "xput": 312676
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1838865",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1838865",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 243631863
+          }
+        },
+        "lat": 8711,
+        "mem": 400268,
+        "ops": 30617,
+        "total_ops": 1838909,
+        "total_ts": 5544,
+        "ts": 99,
+        "xput": 309262
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1869348",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1869348",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 247342785
+          }
+        },
+        "lat": 8749,
+        "mem": 401324,
+        "ops": 30482,
+        "total_ops": 1869391,
+        "total_ts": 5643,
+        "ts": 99,
+        "xput": 307899
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1899823",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1899823",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 251045886
+          }
+        },
+        "lat": 8751,
+        "mem": 402252,
+        "ops": 30474,
+        "total_ops": 1899865,
+        "total_ts": 5742,
+        "ts": 99,
+        "xput": 307818
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1930647",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1930647",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 254793150
+          }
+        },
+        "lat": 8652,
+        "mem": 403184,
+        "ops": 30824,
+        "total_ops": 1930689,
+        "total_ts": 5841,
+        "ts": 99,
+        "xput": 311353
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1960697",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1960697",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 258454657
+          }
+        },
+        "lat": 8875,
+        "mem": 404116,
+        "ops": 30050,
+        "total_ops": 1960739,
+        "total_ts": 5940,
+        "ts": 99,
+        "xput": 303535
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "1990312",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "1990312",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 262055627
+          }
+        },
+        "lat": 9005,
+        "mem": 405044,
+        "ops": 29615,
+        "total_ops": 1990354,
+        "total_ts": 6039,
+        "ts": 99,
+        "xput": 299141
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2019680",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2019680",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 265619733
+          }
+        },
+        "lat": 9081,
+        "mem": 405968,
+        "ops": 29368,
+        "total_ops": 2019722,
+        "total_ts": 6138,
+        "ts": 99,
+        "xput": 296646
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2049327",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2049327",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 269218887
+          }
+        },
+        "lat": 8996,
+        "mem": 406784,
+        "ops": 29647,
+        "total_ops": 2049369,
+        "total_ts": 6237,
+        "ts": 99,
+        "xput": 299464
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2078263",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2078263",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 272742134
+          }
+        },
+        "lat": 9217,
+        "mem": 407708,
+        "ops": 28936,
+        "total_ops": 2078305,
+        "total_ts": 6336,
+        "ts": 99,
+        "xput": 292282
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2107659",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2107659",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 276323462
+          }
+        },
+        "lat": 9073,
+        "mem": 408644,
+        "ops": 29395,
+        "total_ops": 2107700,
+        "total_ts": 6435,
+        "ts": 99,
+        "xput": 296919
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2137565",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2137565",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 279970462
+          }
+        },
+        "lat": 8918,
+        "mem": 409576,
+        "ops": 29906,
+        "total_ops": 2137606,
+        "total_ts": 6534,
+        "ts": 99,
+        "xput": 302080
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2167290",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2167290",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 283572266
+          }
+        },
+        "lat": 8972,
+        "mem": 410396,
+        "ops": 29725,
+        "total_ops": 2167331,
+        "total_ts": 6633,
+        "ts": 99,
+        "xput": 300252
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2196827",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2196827",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 287163095
+          }
+        },
+        "lat": 9029,
+        "mem": 411332,
+        "ops": 29536,
+        "total_ops": 2196867,
+        "total_ts": 6732,
+        "ts": 99,
+        "xput": 298343
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2226421",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2226421",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 290759548
+          }
+        },
+        "lat": 9012,
+        "mem": 412268,
+        "ops": 29593,
+        "total_ops": 2226460,
+        "total_ts": 6831,
+        "ts": 99,
+        "xput": 298919
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2255619",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2255619",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 294309392
+          }
+        },
+        "lat": 9134,
+        "mem": 413196,
+        "ops": 29197,
+        "total_ops": 2255657,
+        "total_ts": 6930,
+        "ts": 99,
+        "xput": 294919
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2284340",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2284340",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 297798419
+          }
+        },
+        "lat": 9286,
+        "mem": 414016,
+        "ops": 28721,
+        "total_ops": 2284378,
+        "total_ts": 7029,
+        "ts": 99,
+        "xput": 290111
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2313573",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2313573",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 301347977
+          }
+        },
+        "lat": 9124,
+        "mem": 414948,
+        "ops": 29230,
+        "total_ops": 2313608,
+        "total_ts": 7128,
+        "ts": 99,
+        "xput": 295252
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2343347",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2343347",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 304969347
+          }
+        },
+        "lat": 8957,
+        "mem": 415876,
+        "ops": 29774,
+        "total_ops": 2343382,
+        "total_ts": 7227,
+        "ts": 99,
+        "xput": 300747
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2371900",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2371900",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 308443034
+          }
+        },
+        "lat": 9341,
+        "mem": 416572,
+        "ops": 28550,
+        "total_ops": 2371932,
+        "total_ts": 7326,
+        "ts": 99,
+        "xput": 288383
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2401009",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2401009",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 311978567
+          }
+        },
+        "lat": 9162,
+        "mem": 417620,
+        "ops": 29109,
+        "total_ops": 2401041,
+        "total_ts": 7425,
+        "ts": 99,
+        "xput": 294030
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2428387",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2428387",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 315312499
+          }
+        },
+        "lat": 9742,
+        "mem": 418428,
+        "ops": 27377,
+        "total_ops": 2428418,
+        "total_ts": 7524,
+        "ts": 99,
+        "xput": 276535
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2454518",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2454518",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 318491571
+          }
+        },
+        "lat": 10206,
+        "mem": 419244,
+        "ops": 26131,
+        "total_ops": 2454549,
+        "total_ts": 7623,
+        "ts": 99,
+        "xput": 263949
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2482332",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2482332",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 321864930
+          }
+        },
+        "lat": 9589,
+        "mem": 420060,
+        "ops": 27814,
+        "total_ops": 2482363,
+        "total_ts": 7722,
+        "ts": 99,
+        "xput": 280949
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2510179",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2510179",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 325249041
+          }
+        },
+        "lat": 9578,
+        "mem": 420760,
+        "ops": 27844,
+        "total_ops": 2510207,
+        "total_ts": 7821,
+        "ts": 99,
+        "xput": 281252
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2537991",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2537991",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 328639653
+          }
+        },
+        "lat": 9589,
+        "mem": 421808,
+        "ops": 27812,
+        "total_ops": 2538019,
+        "total_ts": 7920,
+        "ts": 99,
+        "xput": 280929
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2566005",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2566005",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 332052021
+          }
+        },
+        "lat": 9521,
+        "mem": 422620,
+        "ops": 28010,
+        "total_ops": 2566029,
+        "total_ts": 8019,
+        "ts": 99,
+        "xput": 282929
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2593247",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2593247",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 335367069
+          }
+        },
+        "lat": 9791,
+        "mem": 423428,
+        "ops": 27240,
+        "total_ops": 2593269,
+        "total_ts": 8118,
+        "ts": 99,
+        "xput": 275151
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2621061",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2621061",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 338746258
+          }
+        },
+        "lat": 9589,
+        "mem": 424248,
+        "ops": 27813,
+        "total_ops": 2621082,
+        "total_ts": 8217,
+        "ts": 99,
+        "xput": 280939
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2648527",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2648527",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 342095991
+          }
+        },
+        "lat": 9711,
+        "mem": 425180,
+        "ops": 27463,
+        "total_ops": 2648545,
+        "total_ts": 8316,
+        "ts": 99,
+        "xput": 277404
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2676312",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2676312",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 345477325
+          }
+        },
+        "lat": 9599,
+        "mem": 425992,
+        "ops": 27785,
+        "total_ops": 2676330,
+        "total_ts": 8415,
+        "ts": 99,
+        "xput": 280656
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2703320",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2703320",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 348758545
+          }
+        },
+        "lat": 9876,
+        "mem": 426816,
+        "ops": 27004,
+        "total_ops": 2703334,
+        "total_ts": 8514,
+        "ts": 99,
+        "xput": 272767
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2730430",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2730430",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 352057401
+          }
+        },
+        "lat": 9838,
+        "mem": 427628,
+        "ops": 27108,
+        "total_ops": 2730442,
+        "total_ts": 8613,
+        "ts": 99,
+        "xput": 273818
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2757999",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2757999",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 355405580
+          }
+        },
+        "lat": 9675,
+        "mem": 428436,
+        "ops": 27566,
+        "total_ops": 2758008,
+        "total_ts": 8712,
+        "ts": 99,
+        "xput": 278444
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2784971",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2784971",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 358679675
+          }
+        },
+        "lat": 9889,
+        "mem": 429252,
+        "ops": 26968,
+        "total_ops": 2784976,
+        "total_ts": 8811,
+        "ts": 99,
+        "xput": 272404
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2812346",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2812346",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 362005458
+          }
+        },
+        "lat": 9742,
+        "mem": 430068,
+        "ops": 27375,
+        "total_ops": 2812351,
+        "total_ts": 8910,
+        "ts": 99,
+        "xput": 276515
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2839604",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2839604",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 365319312
+          }
+        },
+        "lat": 9785,
+        "mem": 430996,
+        "ops": 27256,
+        "total_ops": 2839607,
+        "total_ts": 9009,
+        "ts": 99,
+        "xput": 275313
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2866951",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2866951",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 368638935
+          }
+        },
+        "lat": 9752,
+        "mem": 431812,
+        "ops": 27347,
+        "total_ops": 2866954,
+        "total_ts": 9108,
+        "ts": 99,
+        "xput": 276232
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2894371",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2894371",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 371972762
+          }
+        },
+        "lat": 9727,
+        "mem": 432624,
+        "ops": 27419,
+        "total_ops": 2894373,
+        "total_ts": 9207,
+        "ts": 99,
+        "xput": 276959
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2921707",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2921707",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 375299921
+          }
+        },
+        "lat": 9757,
+        "mem": 433440,
+        "ops": 27334,
+        "total_ops": 2921707,
+        "total_ts": 9306,
+        "ts": 99,
+        "xput": 276101
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2949811",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2949811",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 378711550
+          }
+        },
+        "lat": 9490,
+        "mem": 434256,
+        "ops": 28104,
+        "total_ops": 2949811,
+        "total_ts": 9405,
+        "ts": 99,
+        "xput": 283878
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "2977126",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "2977126",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 382032312
+          }
+        },
+        "lat": 9764,
+        "mem": 435076,
+        "ops": 27313,
+        "total_ops": 2977124,
+        "total_ts": 9504,
+        "ts": 99,
+        "xput": 275888
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3004486",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3004486",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 385367142
+          }
+        },
+        "lat": 9748,
+        "mem": 436008,
+        "ops": 27359,
+        "total_ops": 3004483,
+        "total_ts": 9603,
+        "ts": 99,
+        "xput": 276353
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3031752",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3031752",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 388687883
+          }
+        },
+        "lat": 9782,
+        "mem": 436820,
+        "ops": 27265,
+        "total_ops": 3031748,
+        "total_ts": 9702,
+        "ts": 99,
+        "xput": 275404
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3058902",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3058902",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 391997467
+          }
+        },
+        "lat": 9823,
+        "mem": 437632,
+        "ops": 27150,
+        "total_ops": 3058898,
+        "total_ts": 9801,
+        "ts": 99,
+        "xput": 274242
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3085931",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3085931",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 395286436
+          }
+        },
+        "lat": 9868,
+        "mem": 438448,
+        "ops": 27028,
+        "total_ops": 3085926,
+        "total_ts": 9900,
+        "ts": 99,
+        "xput": 273010
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3112124",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3112124",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 398469270
+          }
+        },
+        "lat": 10182,
+        "mem": 439140,
+        "ops": 26192,
+        "total_ops": 3112118,
+        "total_ts": 9999,
+        "ts": 99,
+        "xput": 264565
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3138374",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3138374",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 401657111
+          }
+        },
+        "lat": 10162,
+        "mem": 440072,
+        "ops": 26245,
+        "total_ops": 3138363,
+        "total_ts": 10098,
+        "ts": 99,
+        "xput": 265101
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3164743",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3164743",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 404864541
+          }
+        },
+        "lat": 10114,
+        "mem": 440892,
+        "ops": 26368,
+        "total_ops": 3164731,
+        "total_ts": 10197,
+        "ts": 99,
+        "xput": 266343
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3190916",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3190916",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 408051267
+          }
+        },
+        "lat": 10190,
+        "mem": 441596,
+        "ops": 26172,
+        "total_ops": 3190903,
+        "total_ts": 10296,
+        "ts": 99,
+        "xput": 264363
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3216316",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3216316",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 411138636
+          }
+        },
+        "lat": 10500,
+        "mem": 442412,
+        "ops": 25400,
+        "total_ops": 3216303,
+        "total_ts": 10395,
+        "ts": 99,
+        "xput": 256565
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3242728",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3242728",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 414348093
+          }
+        },
+        "lat": 10098,
+        "mem": 443232,
+        "ops": 26410,
+        "total_ops": 3242713,
+        "total_ts": 10494,
+        "ts": 99,
+        "xput": 266767
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3269075",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3269075",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 417539523
+          }
+        },
+        "lat": 10124,
+        "mem": 444048,
+        "ops": 26345,
+        "total_ops": 3269058,
+        "total_ts": 10593,
+        "ts": 99,
+        "xput": 266111
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3294946",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3294946",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 420687103
+          }
+        },
+        "lat": 10310,
+        "mem": 444748,
+        "ops": 25868,
+        "total_ops": 3294926,
+        "total_ts": 10692,
+        "ts": 99,
+        "xput": 261292
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3320708",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3320708",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 423811593
+          }
+        },
+        "lat": 10353,
+        "mem": 445560,
+        "ops": 25761,
+        "total_ops": 3320687,
+        "total_ts": 10791,
+        "ts": 99,
+        "xput": 260212
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3346413",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3346413",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 426933121
+          }
+        },
+        "lat": 10376,
+        "mem": 446372,
+        "ops": 25702,
+        "total_ops": 3346389,
+        "total_ts": 10890,
+        "ts": 99,
+        "xput": 259616
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3372720",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3372720",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 430130491
+          }
+        },
+        "lat": 10138,
+        "mem": 447184,
+        "ops": 26307,
+        "total_ops": 3372696,
+        "total_ts": 10989,
+        "ts": 99,
+        "xput": 265727
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3398949",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3398949",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 433326804
+          }
+        },
+        "lat": 10169,
+        "mem": 447996,
+        "ops": 26227,
+        "total_ops": 3398923,
+        "total_ts": 11088,
+        "ts": 99,
+        "xput": 264919
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3424853",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3424853",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 436478042
+          }
+        },
+        "lat": 10297,
+        "mem": 448692,
+        "ops": 25900,
+        "total_ops": 3424823,
+        "total_ts": 11187,
+        "ts": 99,
+        "xput": 261616
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3451530",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3451530",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 439720554
+          }
+        },
+        "lat": 9999,
+        "mem": 449388,
+        "ops": 26673,
+        "total_ops": 3451496,
+        "total_ts": 11286,
+        "ts": 99,
+        "xput": 269424
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3478079",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3478079",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 442948630
+          }
+        },
+        "lat": 10046,
+        "mem": 450324,
+        "ops": 26547,
+        "total_ops": 3478043,
+        "total_ts": 11385,
+        "ts": 99,
+        "xput": 268151
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3504716",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3504716",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 446186658
+          }
+        },
+        "lat": 10012,
+        "mem": 451144,
+        "ops": 26637,
+        "total_ops": 3504680,
+        "total_ts": 11484,
+        "ts": 99,
+        "xput": 269060
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3530959",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3530959",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 449377594
+          }
+        },
+        "lat": 10164,
+        "mem": 451956,
+        "ops": 26240,
+        "total_ops": 3530920,
+        "total_ts": 11583,
+        "ts": 99,
+        "xput": 265050
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3557214",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3557214",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 452567627
+          }
+        },
+        "lat": 10158,
+        "mem": 452772,
+        "ops": 26254,
+        "total_ops": 3557174,
+        "total_ts": 11682,
+        "ts": 99,
+        "xput": 265191
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3583955",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3583955",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 455818539
+          }
+        },
+        "lat": 9975,
+        "mem": 453464,
+        "ops": 26737,
+        "total_ops": 3583911,
+        "total_ts": 11781,
+        "ts": 99,
+        "xput": 270070
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3609780",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3609780",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 458958209
+          }
+        },
+        "lat": 10327,
+        "mem": 454284,
+        "ops": 25824,
+        "total_ops": 3609735,
+        "total_ts": 11880,
+        "ts": 99,
+        "xput": 260848
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3635226",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3635226",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 462051803
+          }
+        },
+        "lat": 10481,
+        "mem": 455096,
+        "ops": 25446,
+        "total_ops": 3635181,
+        "total_ts": 11979,
+        "ts": 99,
+        "xput": 257030
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3660405",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3660405",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 465122243
+          }
+        },
+        "lat": 10594,
+        "mem": 455912,
+        "ops": 25175,
+        "total_ops": 3660356,
+        "total_ts": 12078,
+        "ts": 99,
+        "xput": 254292
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3685665",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3685665",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 468190390
+          }
+        },
+        "lat": 10558,
+        "mem": 456608,
+        "ops": 25260,
+        "total_ops": 3685616,
+        "total_ts": 12177,
+        "ts": 99,
+        "xput": 255151
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3710732",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3710732",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 471236797
+          }
+        },
+        "lat": 10640,
+        "mem": 457420,
+        "ops": 25067,
+        "total_ops": 3710683,
+        "total_ts": 12276,
+        "ts": 99,
+        "xput": 253202
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3736531",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3736531",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 474374470
+          }
+        },
+        "lat": 10338,
+        "mem": 458232,
+        "ops": 25798,
+        "total_ops": 3736481,
+        "total_ts": 12375,
+        "ts": 99,
+        "xput": 260585
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3762146",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3762146",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 477482930
+          }
+        },
+        "lat": 10413,
+        "mem": 458928,
+        "ops": 25612,
+        "total_ops": 3762093,
+        "total_ts": 12474,
+        "ts": 99,
+        "xput": 258707
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3787886",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3787886",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 480612516
+          }
+        },
+        "lat": 10362,
+        "mem": 459640,
+        "ops": 25739,
+        "total_ops": 3787832,
+        "total_ts": 12573,
+        "ts": 99,
+        "xput": 259989
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3813277",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3813277",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 483710362
+          }
+        },
+        "lat": 10504,
+        "mem": 460456,
+        "ops": 25390,
+        "total_ops": 3813222,
+        "total_ts": 12672,
+        "ts": 99,
+        "xput": 256464
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3839023",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3839023",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 486835350
+          }
+        },
+        "lat": 10360,
+        "mem": 461268,
+        "ops": 25742,
+        "total_ops": 3838964,
+        "total_ts": 12771,
+        "ts": 99,
+        "xput": 260020
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3864878",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3864878",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 489979276
+          }
+        },
+        "lat": 10317,
+        "mem": 462080,
+        "ops": 25850,
+        "total_ops": 3864814,
+        "total_ts": 12870,
+        "ts": 99,
+        "xput": 261111
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3890768",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3890768",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 493126024
+          }
+        },
+        "lat": 10303,
+        "mem": 462780,
+        "ops": 25887,
+        "total_ops": 3890701,
+        "total_ts": 12969,
+        "ts": 99,
+        "xput": 261484
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3916303",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3916303",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 496237319
+          }
+        },
+        "lat": 10445,
+        "mem": 463588,
+        "ops": 25534,
+        "total_ops": 3916235,
+        "total_ts": 13068,
+        "ts": 99,
+        "xput": 257919
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3941831",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3941831",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 499341581
+          }
+        },
+        "lat": 10448,
+        "mem": 464404,
+        "ops": 25527,
+        "total_ops": 3941762,
+        "total_ts": 13167,
+        "ts": 99,
+        "xput": 257848
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3967508",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3967508",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 502460556
+          }
+        },
+        "lat": 10387,
+        "mem": 465104,
+        "ops": 25676,
+        "total_ops": 3967438,
+        "total_ts": 13266,
+        "ts": 99,
+        "xput": 259353
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "3992478",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "3992478",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 505498404
+          }
+        },
+        "lat": 10683,
+        "mem": 465804,
+        "ops": 24965,
+        "total_ops": 3992403,
+        "total_ts": 13365,
+        "ts": 99,
+        "xput": 252171
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4017936",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4017936",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 508592173
+          }
+        },
+        "lat": 10477,
+        "mem": 466620,
+        "ops": 25456,
+        "total_ops": 4017859,
+        "total_ts": 13464,
+        "ts": 99,
+        "xput": 257131
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4043431",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4043431",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 511689739
+          }
+        },
+        "lat": 10462,
+        "mem": 467432,
+        "ops": 25492,
+        "total_ops": 4043351,
+        "total_ts": 13563,
+        "ts": 99,
+        "xput": 257494
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4068699",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4068699",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 514766825
+          }
+        },
+        "lat": 10555,
+        "mem": 468252,
+        "ops": 25267,
+        "total_ops": 4068618,
+        "total_ts": 13662,
+        "ts": 99,
+        "xput": 255222
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4093683",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4093683",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 517800936
+          }
+        },
+        "lat": 10675,
+        "mem": 468960,
+        "ops": 24984,
+        "total_ops": 4093602,
+        "total_ts": 13761,
+        "ts": 99,
+        "xput": 252363
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4119022",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4119022",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 520882097
+          }
+        },
+        "lat": 10527,
+        "mem": 469664,
+        "ops": 25335,
+        "total_ops": 4118937,
+        "total_ts": 13860,
+        "ts": 99,
+        "xput": 255909
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4143890",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4143890",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 523910112
+          }
+        },
+        "lat": 10725,
+        "mem": 470484,
+        "ops": 24866,
+        "total_ops": 4143803,
+        "total_ts": 13959,
+        "ts": 99,
+        "xput": 251171
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4167001",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4167001",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 526720962
+          }
+        },
+        "lat": 11542,
+        "mem": 471184,
+        "ops": 23106,
+        "total_ops": 4166909,
+        "total_ts": 14058,
+        "ts": 99,
+        "xput": 233393
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4190795",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4190795",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 529607244
+          }
+        },
+        "lat": 11210,
+        "mem": 471888,
+        "ops": 23792,
+        "total_ops": 4190701,
+        "total_ts": 14157,
+        "ts": 99,
+        "xput": 240323
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4214422",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4214422",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 532479427
+          }
+        },
+        "lat": 11289,
+        "mem": 472584,
+        "ops": 23626,
+        "total_ops": 4214327,
+        "total_ts": 14256,
+        "ts": 99,
+        "xput": 238646
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4238781",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4238781",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 535443229
+          }
+        },
+        "lat": 10949,
+        "mem": 473284,
+        "ops": 24357,
+        "total_ops": 4238684,
+        "total_ts": 14355,
+        "ts": 99,
+        "xput": 246030
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4263072",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4263072",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 538391408
+          }
+        },
+        "lat": 10981,
+        "mem": 473980,
+        "ops": 24288,
+        "total_ops": 4262972,
+        "total_ts": 14454,
+        "ts": 99,
+        "xput": 245333
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4287619",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4287619",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 541372904
+          }
+        },
+        "lat": 10867,
+        "mem": 474792,
+        "ops": 24542,
+        "total_ops": 4287514,
+        "total_ts": 14553,
+        "ts": 99,
+        "xput": 247898
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4311844",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4311844",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 544312393
+          }
+        },
+        "lat": 11010,
+        "mem": 475496,
+        "ops": 24224,
+        "total_ops": 4311738,
+        "total_ts": 14652,
+        "ts": 99,
+        "xput": 244686
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4335514",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4335514",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 547193024
+          }
+        },
+        "lat": 11268,
+        "mem": 476308,
+        "ops": 23669,
+        "total_ops": 4335407,
+        "total_ts": 14751,
+        "ts": 99,
+        "xput": 239080
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4359586",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4359586",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 550116166
+          }
+        },
+        "lat": 11080,
+        "mem": 477012,
+        "ops": 24071,
+        "total_ops": 4359478,
+        "total_ts": 14850,
+        "ts": 99,
+        "xput": 243141
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4384654",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4384654",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 553162542
+          }
+        },
+        "lat": 10639,
+        "mem": 477716,
+        "ops": 25068,
+        "total_ops": 4384546,
+        "total_ts": 14949,
+        "ts": 99,
+        "xput": 253212
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4409838",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4409838",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 556225917
+          }
+        },
+        "lat": 10591,
+        "mem": 478528,
+        "ops": 25181,
+        "total_ops": 4409727,
+        "total_ts": 15048,
+        "ts": 99,
+        "xput": 254353
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4434956",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4434956",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 559282668
+          }
+        },
+        "lat": 10619,
+        "mem": 479228,
+        "ops": 25115,
+        "total_ops": 4434842,
+        "total_ts": 15147,
+        "ts": 99,
+        "xput": 253686
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4459292",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4459292",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 562240977
+          }
+        },
+        "lat": 10961,
+        "mem": 479928,
+        "ops": 24332,
+        "total_ops": 4459174,
+        "total_ts": 15246,
+        "ts": 99,
+        "xput": 245777
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4483502",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4483502",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 565186012
+          }
+        },
+        "lat": 11016,
+        "mem": 480748,
+        "ops": 24209,
+        "total_ops": 4483383,
+        "total_ts": 15345,
+        "ts": 99,
+        "xput": 244535
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4507296",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4507296",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 568076546
+          }
+        },
+        "lat": 11211,
+        "mem": 481444,
+        "ops": 23790,
+        "total_ops": 4507173,
+        "total_ts": 15444,
+        "ts": 99,
+        "xput": 240303
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4531550",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4531550",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 571022710
+          }
+        },
+        "lat": 10997,
+        "mem": 482136,
+        "ops": 24252,
+        "total_ops": 4531425,
+        "total_ts": 15543,
+        "ts": 99,
+        "xput": 244969
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4555743",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4555743",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 573955662
+          }
+        },
+        "lat": 11024,
+        "mem": 482840,
+        "ops": 24193,
+        "total_ops": 4555618,
+        "total_ts": 15642,
+        "ts": 99,
+        "xput": 244373
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4579876",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4579876",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 576889944
+          }
+        },
+        "lat": 11053,
+        "mem": 483648,
+        "ops": 24130,
+        "total_ops": 4579748,
+        "total_ts": 15741,
+        "ts": 99,
+        "xput": 243737
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4603782",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4603782",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 579798224
+          }
+        },
+        "lat": 11159,
+        "mem": 484232,
+        "ops": 23901,
+        "total_ops": 4603649,
+        "total_ts": 15840,
+        "ts": 99,
+        "xput": 241424
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4627438",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4627438",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 582672954
+          }
+        },
+        "lat": 11275,
+        "mem": 485052,
+        "ops": 23654,
+        "total_ops": 4627303,
+        "total_ts": 15939,
+        "ts": 99,
+        "xput": 238929
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4651280",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4651280",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 585570989
+          }
+        },
+        "lat": 11187,
+        "mem": 485752,
+        "ops": 23840,
+        "total_ops": 4651143,
+        "total_ts": 16038,
+        "ts": 99,
+        "xput": 240808
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4673500",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4673500",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 588272980
+          }
+        },
+        "lat": 12003,
+        "mem": 486444,
+        "ops": 22220,
+        "total_ops": 4673363,
+        "total_ts": 16137,
+        "ts": 99,
+        "xput": 224444
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4696480",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4696480",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 591063531
+          }
+        },
+        "lat": 11608,
+        "mem": 487148,
+        "ops": 22975,
+        "total_ops": 4696338,
+        "total_ts": 16236,
+        "ts": 99,
+        "xput": 232070
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4718596",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4718596",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 593747218
+          }
+        },
+        "lat": 12062,
+        "mem": 487732,
+        "ops": 22111,
+        "total_ops": 4718449,
+        "total_ts": 16335,
+        "ts": 99,
+        "xput": 223343
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4740057",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4740057",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 596355504
+          }
+        },
+        "lat": 12430,
+        "mem": 488316,
+        "ops": 21457,
+        "total_ops": 4739906,
+        "total_ts": 16434,
+        "ts": 99,
+        "xput": 216737
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4762450",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4762450",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 599072851
+          }
+        },
+        "lat": 11912,
+        "mem": 489128,
+        "ops": 22390,
+        "total_ops": 4762296,
+        "total_ts": 16533,
+        "ts": 99,
+        "xput": 226161
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4785641",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4785641",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 601893757
+          }
+        },
+        "lat": 11501,
+        "mem": 489820,
+        "ops": 23190,
+        "total_ops": 4785486,
+        "total_ts": 16632,
+        "ts": 99,
+        "xput": 234242
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4809140",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4809140",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 604754570
+          }
+        },
+        "lat": 11350,
+        "mem": 490524,
+        "ops": 23499,
+        "total_ops": 4808985,
+        "total_ts": 16731,
+        "ts": 99,
+        "xput": 237363
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4829956",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4829956",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 607289404
+          }
+        },
+        "lat": 12813,
+        "mem": 491104,
+        "ops": 20815,
+        "total_ops": 4829800,
+        "total_ts": 16830,
+        "ts": 99,
+        "xput": 210252
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4848873",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4848873",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 609588330
+          }
+        },
+        "lat": 14100,
+        "mem": 491692,
+        "ops": 18915,
+        "total_ops": 4848715,
+        "total_ts": 16929,
+        "ts": 99,
+        "xput": 191060
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4868366",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4868366",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 611958430
+          }
+        },
+        "lat": 13684,
+        "mem": 492280,
+        "ops": 19491,
+        "total_ops": 4868206,
+        "total_ts": 17028,
+        "ts": 99,
+        "xput": 196878
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4890273",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4890273",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 614619090
+          }
+        },
+        "lat": 12176,
+        "mem": 492976,
+        "ops": 21905,
+        "total_ops": 4890111,
+        "total_ts": 17127,
+        "ts": 99,
+        "xput": 221262
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4911656",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4911656",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 617212174
+          }
+        },
+        "lat": 12474,
+        "mem": 493560,
+        "ops": 21381,
+        "total_ops": 4911492,
+        "total_ts": 17226,
+        "ts": 99,
+        "xput": 215969
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4930880",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4930880",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 619548329
+          }
+        },
+        "lat": 13874,
+        "mem": 494136,
+        "ops": 19223,
+        "total_ops": 4930715,
+        "total_ts": 17325,
+        "ts": 99,
+        "xput": 194171
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4949932",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4949932",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 621871597
+          }
+        },
+        "lat": 13999,
+        "mem": 494716,
+        "ops": 19052,
+        "total_ops": 4949767,
+        "total_ts": 17424,
+        "ts": 99,
+        "xput": 192444
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4970564",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4970564",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 624381699
+          }
+        },
+        "lat": 12927,
+        "mem": 495300,
+        "ops": 20631,
+        "total_ops": 4970398,
+        "total_ts": 17523,
+        "ts": 99,
+        "xput": 208393
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "4993394",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "4993394",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 627157254
+          }
+        },
+        "lat": 11683,
+        "mem": 496004,
+        "ops": 22828,
+        "total_ops": 4993226,
+        "total_ts": 17622,
+        "ts": 99,
+        "xput": 230585
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5016583",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5016583",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 629976444
+          }
+        },
+        "lat": 11504,
+        "mem": 496704,
+        "ops": 23183,
+        "total_ops": 5016409,
+        "total_ts": 17721,
+        "ts": 99,
+        "xput": 234171
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5039893",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5039893",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 632816011
+          }
+        },
+        "lat": 11442,
+        "mem": 497396,
+        "ops": 23309,
+        "total_ops": 5039718,
+        "total_ts": 17820,
+        "ts": 99,
+        "xput": 235444
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5062302",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5062302",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 635539357
+          }
+        },
+        "lat": 11901,
+        "mem": 498092,
+        "ops": 22409,
+        "total_ops": 5062127,
+        "total_ts": 17919,
+        "ts": 99,
+        "xput": 226353
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5085563",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5085563",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 638373510
+          }
+        },
+        "lat": 11467,
+        "mem": 498796,
+        "ops": 23258,
+        "total_ops": 5085385,
+        "total_ts": 18018,
+        "ts": 99,
+        "xput": 234929
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5109245",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5109245",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 641254355
+          }
+        },
+        "lat": 11263,
+        "mem": 499500,
+        "ops": 23680,
+        "total_ops": 5109065,
+        "total_ts": 18117,
+        "ts": 99,
+        "xput": 239191
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5132989",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5132989",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 644139098
+          }
+        },
+        "lat": 11232,
+        "mem": 500192,
+        "ops": 23744,
+        "total_ops": 5132809,
+        "total_ts": 18216,
+        "ts": 99,
+        "xput": 239838
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5156377",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5156377",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 646984978
+          }
+        },
+        "lat": 11410,
+        "mem": 500896,
+        "ops": 23384,
+        "total_ops": 5156193,
+        "total_ts": 18315,
+        "ts": 99,
+        "xput": 236202
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5180227",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5180227",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 649883096
+          }
+        },
+        "lat": 11185,
+        "mem": 501588,
+        "ops": 23846,
+        "total_ops": 5180039,
+        "total_ts": 18414,
+        "ts": 99,
+        "xput": 240868
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5204043",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5204043",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 652777460
+          }
+        },
+        "lat": 11200,
+        "mem": 502408,
+        "ops": 23814,
+        "total_ops": 5203853,
+        "total_ts": 18513,
+        "ts": 99,
+        "xput": 240545
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5227747",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5227747",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 655658799
+          }
+        },
+        "lat": 11253,
+        "mem": 503108,
+        "ops": 23699,
+        "total_ops": 5227552,
+        "total_ts": 18612,
+        "ts": 99,
+        "xput": 239383
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5251375",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5251375",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 658531889
+          }
+        },
+        "lat": 11288,
+        "mem": 503812,
+        "ops": 23627,
+        "total_ops": 5251179,
+        "total_ts": 18711,
+        "ts": 99,
+        "xput": 238656
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5274518",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5274518",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 661347409
+          }
+        },
+        "lat": 11524,
+        "mem": 504516,
+        "ops": 23142,
+        "total_ops": 5274321,
+        "total_ts": 18810,
+        "ts": 99,
+        "xput": 233757
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5297420",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5297420",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 664142314
+          }
+        },
+        "lat": 11646,
+        "mem": 505100,
+        "ops": 22901,
+        "total_ops": 5297222,
+        "total_ts": 18909,
+        "ts": 99,
+        "xput": 231323
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5320195",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5320195",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 666909470
+          }
+        },
+        "lat": 11711,
+        "mem": 505800,
+        "ops": 22774,
+        "total_ops": 5319996,
+        "total_ts": 19008,
+        "ts": 99,
+        "xput": 230040
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5343005",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5343005",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 669675846
+          }
+        },
+        "lat": 11693,
+        "mem": 506500,
+        "ops": 22808,
+        "total_ops": 5342804,
+        "total_ts": 19107,
+        "ts": 99,
+        "xput": 230383
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5365830",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5365830",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 672450389
+          }
+        },
+        "lat": 11687,
+        "mem": 507196,
+        "ops": 22823,
+        "total_ops": 5365627,
+        "total_ts": 19206,
+        "ts": 99,
+        "xput": 230535
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5388502",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5388502",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 675199573
+          }
+        },
+        "lat": 11765,
+        "mem": 507900,
+        "ops": 22669,
+        "total_ops": 5388296,
+        "total_ts": 19305,
+        "ts": 99,
+        "xput": 228979
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5411404",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5411404",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 677978884
+          }
+        },
+        "lat": 11647,
+        "mem": 508596,
+        "ops": 22899,
+        "total_ops": 5411195,
+        "total_ts": 19404,
+        "ts": 99,
+        "xput": 231303
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5433437",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5433437",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 680658142
+          }
+        },
+        "lat": 12105,
+        "mem": 509176,
+        "ops": 22032,
+        "total_ops": 5433227,
+        "total_ts": 19503,
+        "ts": 99,
+        "xput": 222545
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5456499",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5456499",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 683456323
+          }
+        },
+        "lat": 11566,
+        "mem": 509876,
+        "ops": 23060,
+        "total_ops": 5456287,
+        "total_ts": 19602,
+        "ts": 99,
+        "xput": 232929
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5479656",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5479656",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 686274324
+          }
+        },
+        "lat": 11517,
+        "mem": 510576,
+        "ops": 23157,
+        "total_ops": 5479444,
+        "total_ts": 19701,
+        "ts": 99,
+        "xput": 233909
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5502006",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5502006",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 688984028
+          }
+        },
+        "lat": 11936,
+        "mem": 511268,
+        "ops": 22347,
+        "total_ops": 5501791,
+        "total_ts": 19800,
+        "ts": 99,
+        "xput": 225727
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5524257",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5524257",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 691682210
+          }
+        },
+        "lat": 11988,
+        "mem": 511972,
+        "ops": 22247,
+        "total_ops": 5524038,
+        "total_ts": 19899,
+        "ts": 99,
+        "xput": 224717
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5547333",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5547333",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 694494463
+          }
+        },
+        "lat": 11559,
+        "mem": 512668,
+        "ops": 23073,
+        "total_ops": 5547111,
+        "total_ts": 19998,
+        "ts": 99,
+        "xput": 233060
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5570289",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5570289",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 697280836
+          }
+        },
+        "lat": 11618,
+        "mem": 513368,
+        "ops": 22955,
+        "total_ops": 5570066,
+        "total_ts": 20097,
+        "ts": 99,
+        "xput": 231868
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5593414",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5593414",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 700091051
+          }
+        },
+        "lat": 11535,
+        "mem": 514068,
+        "ops": 23121,
+        "total_ops": 5593187,
+        "total_ts": 20196,
+        "ts": 99,
+        "xput": 233545
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5616402",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5616402",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 702887162
+          }
+        },
+        "lat": 11603,
+        "mem": 514764,
+        "ops": 22986,
+        "total_ops": 5616173,
+        "total_ts": 20295,
+        "ts": 99,
+        "xput": 232181
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5638879",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5638879",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 705615156
+          }
+        },
+        "lat": 11867,
+        "mem": 515344,
+        "ops": 22475,
+        "total_ops": 5638648,
+        "total_ts": 20394,
+        "ts": 99,
+        "xput": 227020
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5661462",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5661462",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 708360159
+          }
+        },
+        "lat": 11810,
+        "mem": 516044,
+        "ops": 22583,
+        "total_ops": 5661231,
+        "total_ts": 20493,
+        "ts": 99,
+        "xput": 228111
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5682665",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5682665",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 710932899
+          }
+        },
+        "lat": 12580,
+        "mem": 516740,
+        "ops": 21201,
+        "total_ops": 5682432,
+        "total_ts": 20592,
+        "ts": 99,
+        "xput": 214151
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5704748",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5704748",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 713619320
+          }
+        },
+        "lat": 12077,
+        "mem": 517320,
+        "ops": 22083,
+        "total_ops": 5704515,
+        "total_ts": 20691,
+        "ts": 99,
+        "xput": 223060
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5727433",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5727433",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 716378034
+          }
+        },
+        "lat": 11758,
+        "mem": 518024,
+        "ops": 22683,
+        "total_ops": 5727198,
+        "total_ts": 20790,
+        "ts": 99,
+        "xput": 229121
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5749880",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5749880",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 719101563
+          }
+        },
+        "lat": 11882,
+        "mem": 518720,
+        "ops": 22446,
+        "total_ops": 5749644,
+        "total_ts": 20889,
+        "ts": 99,
+        "xput": 226727
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5772577",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5772577",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 721854802
+          }
+        },
+        "lat": 11751,
+        "mem": 519424,
+        "ops": 22696,
+        "total_ops": 5772340,
+        "total_ts": 20988,
+        "ts": 99,
+        "xput": 229252
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5794700",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5794700",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 724545820
+          }
+        },
+        "lat": 12055,
+        "mem": 520000,
+        "ops": 22123,
+        "total_ops": 5794463,
+        "total_ts": 21087,
+        "ts": 99,
+        "xput": 223464
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5816925",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5816925",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 727247068
+          }
+        },
+        "lat": 12000,
+        "mem": 520704,
+        "ops": 22225,
+        "total_ops": 5816688,
+        "total_ts": 21186,
+        "ts": 99,
+        "xput": 224494
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5838862",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5838862",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 729915427
+          }
+        },
+        "lat": 12159,
+        "mem": 521400,
+        "ops": 21934,
+        "total_ops": 5838622,
+        "total_ts": 21285,
+        "ts": 99,
+        "xput": 221555
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5860207",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5860207",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 732515829
+          }
+        },
+        "lat": 12496,
+        "mem": 521980,
+        "ops": 21344,
+        "total_ops": 5859966,
+        "total_ts": 21384,
+        "ts": 99,
+        "xput": 215595
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5882402",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5882402",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 735217595
+          }
+        },
+        "lat": 12019,
+        "mem": 522680,
+        "ops": 22194,
+        "total_ops": 5882160,
+        "total_ts": 21483,
+        "ts": 99,
+        "xput": 224181
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5904677",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5904677",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 737923500
+          }
+        },
+        "lat": 11974,
+        "mem": 523144,
+        "ops": 22274,
+        "total_ops": 5904434,
+        "total_ts": 21582,
+        "ts": 99,
+        "xput": 224989
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5926548",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5926548",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 740589462
+          }
+        },
+        "lat": 12195,
+        "mem": 523956,
+        "ops": 21870,
+        "total_ops": 5926304,
+        "total_ts": 21681,
+        "ts": 99,
+        "xput": 220909
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5948542",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5948542",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 743254522
+          }
+        },
+        "lat": 12127,
+        "mem": 524648,
+        "ops": 21993,
+        "total_ops": 5948297,
+        "total_ts": 21780,
+        "ts": 99,
+        "xput": 222151
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5970183",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5970183",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 745878247
+          }
+        },
+        "lat": 12324,
+        "mem": 525116,
+        "ops": 21641,
+        "total_ops": 5969938,
+        "total_ts": 21879,
+        "ts": 99,
+        "xput": 218595
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "5992412",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "5992412",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 748581818
+          }
+        },
+        "lat": 11999,
+        "mem": 525932,
+        "ops": 22227,
+        "total_ops": 5992165,
+        "total_ts": 21978,
+        "ts": 99,
+        "xput": 224515
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6014653",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6014653",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 751285008
+          }
+        },
+        "lat": 11992,
+        "mem": 526628,
+        "ops": 22240,
+        "total_ops": 6014405,
+        "total_ts": 22077,
+        "ts": 99,
+        "xput": 224646
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6036828",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6036828",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 753985140
+          }
+        },
+        "lat": 12028,
+        "mem": 527212,
+        "ops": 22173,
+        "total_ops": 6036578,
+        "total_ts": 22176,
+        "ts": 99,
+        "xput": 223969
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6058986",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6058986",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 756675174
+          }
+        },
+        "lat": 12038,
+        "mem": 527904,
+        "ops": 22155,
+        "total_ops": 6058733,
+        "total_ts": 22275,
+        "ts": 99,
+        "xput": 223787
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6081095",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6081095",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 759363933
+          }
+        },
+        "lat": 12065,
+        "mem": 528604,
+        "ops": 22106,
+        "total_ops": 6080839,
+        "total_ts": 22374,
+        "ts": 99,
+        "xput": 223292
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6102848",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6102848",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 762009158
+          }
+        },
+        "lat": 12260,
+        "mem": 529184,
+        "ops": 21753,
+        "total_ops": 6102592,
+        "total_ts": 22473,
+        "ts": 99,
+        "xput": 219727
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6123836",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6123836",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 764559792
+          }
+        },
+        "lat": 12708,
+        "mem": 529880,
+        "ops": 20987,
+        "total_ops": 6123579,
+        "total_ts": 22572,
+        "ts": 99,
+        "xput": 211989
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6145288",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6145288",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 767176102
+          }
+        },
+        "lat": 12434,
+        "mem": 530460,
+        "ops": 21450,
+        "total_ops": 6145029,
+        "total_ts": 22671,
+        "ts": 99,
+        "xput": 216666
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6167070",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6167070",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 769824371
+          }
+        },
+        "lat": 12245,
+        "mem": 531168,
+        "ops": 21781,
+        "total_ops": 6166810,
+        "total_ts": 22770,
+        "ts": 99,
+        "xput": 220010
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6188247",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6188247",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 772406194
+          }
+        },
+        "lat": 12594,
+        "mem": 531748,
+        "ops": 21176,
+        "total_ops": 6187986,
+        "total_ts": 22869,
+        "ts": 99,
+        "xput": 213898
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6209793",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6209793",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 775026695
+          }
+        },
+        "lat": 12379,
+        "mem": 532448,
+        "ops": 21545,
+        "total_ops": 6209531,
+        "total_ts": 22968,
+        "ts": 99,
+        "xput": 217626
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6231390",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6231390",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 777652572
+          }
+        },
+        "lat": 12350,
+        "mem": 533028,
+        "ops": 21596,
+        "total_ops": 6231127,
+        "total_ts": 23067,
+        "ts": 99,
+        "xput": 218141
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6253033",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6253033",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 780282680
+          }
+        },
+        "lat": 12323,
+        "mem": 533724,
+        "ops": 21643,
+        "total_ops": 6252770,
+        "total_ts": 23166,
+        "ts": 99,
+        "xput": 218616
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6274715",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6274715",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 782921371
+          }
+        },
+        "lat": 12301,
+        "mem": 534424,
+        "ops": 21681,
+        "total_ops": 6274451,
+        "total_ts": 23265,
+        "ts": 99,
+        "xput": 219000
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6295663",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6295663",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 785466229
+          }
+        },
+        "lat": 12733,
+        "mem": 535012,
+        "ops": 20947,
+        "total_ops": 6295398,
+        "total_ts": 23364,
+        "ts": 99,
+        "xput": 211585
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6316288",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6316288",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 787970371
+          }
+        },
+        "lat": 12932,
+        "mem": 535592,
+        "ops": 20623,
+        "total_ops": 6316021,
+        "total_ts": 23463,
+        "ts": 99,
+        "xput": 208313
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6337451",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6337451",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 790540443
+          }
+        },
+        "lat": 12602,
+        "mem": 536292,
+        "ops": 21163,
+        "total_ops": 6337184,
+        "total_ts": 23562,
+        "ts": 99,
+        "xput": 213767
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6358585",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6358585",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 793107978
+          }
+        },
+        "lat": 12620,
+        "mem": 536876,
+        "ops": 21133,
+        "total_ops": 6358317,
+        "total_ts": 23661,
+        "ts": 99,
+        "xput": 213464
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6379077",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6379077",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 795599366
+          }
+        },
+        "lat": 13015,
+        "mem": 537456,
+        "ops": 20492,
+        "total_ops": 6378809,
+        "total_ts": 23760,
+        "ts": 99,
+        "xput": 206989
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6398811",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6398811",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 798003300
+          }
+        },
+        "lat": 13516,
+        "mem": 538032,
+        "ops": 19733,
+        "total_ops": 6398542,
+        "total_ts": 23859,
+        "ts": 99,
+        "xput": 199323
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6419078",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6419078",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 800468925
+          }
+        },
+        "lat": 13162,
+        "mem": 538732,
+        "ops": 20263,
+        "total_ops": 6418805,
+        "total_ts": 23958,
+        "ts": 99,
+        "xput": 204676
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6440029",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6440029",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 803024803
+          }
+        },
+        "lat": 12731,
+        "mem": 539312,
+        "ops": 20950,
+        "total_ops": 6439755,
+        "total_ts": 24057,
+        "ts": 99,
+        "xput": 211616
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6461380",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6461380",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 805615619
+          }
+        },
+        "lat": 12492,
+        "mem": 539896,
+        "ops": 21350,
+        "total_ops": 6461105,
+        "total_ts": 24156,
+        "ts": 99,
+        "xput": 215656
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6482873",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6482873",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 808217684
+          }
+        },
+        "lat": 12410,
+        "mem": 540592,
+        "ops": 21492,
+        "total_ops": 6482597,
+        "total_ts": 24255,
+        "ts": 99,
+        "xput": 217090
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6504084",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6504084",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 810795286
+          }
+        },
+        "lat": 12574,
+        "mem": 541172,
+        "ops": 21211,
+        "total_ops": 6503808,
+        "total_ts": 24354,
+        "ts": 99,
+        "xput": 214252
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6525338",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6525338",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 813374698
+          }
+        },
+        "lat": 12551,
+        "mem": 541872,
+        "ops": 21250,
+        "total_ops": 6525058,
+        "total_ts": 24453,
+        "ts": 99,
+        "xput": 214646
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6546002",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6546002",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 815885625
+          }
+        },
+        "lat": 12907,
+        "mem": 542448,
+        "ops": 20663,
+        "total_ops": 6545721,
+        "total_ts": 24552,
+        "ts": 99,
+        "xput": 208717
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6566879",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6566879",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 818424332
+          }
+        },
+        "lat": 12775,
+        "mem": 543148,
+        "ops": 20876,
+        "total_ops": 6566597,
+        "total_ts": 24651,
+        "ts": 99,
+        "xput": 210868
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6587669",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6587669",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 820957533
+          }
+        },
+        "lat": 12830,
+        "mem": 543612,
+        "ops": 20788,
+        "total_ops": 6587385,
+        "total_ts": 24750,
+        "ts": 99,
+        "xput": 209979
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6608067",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6608067",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 823441576
+          }
+        },
+        "lat": 13075,
+        "mem": 544308,
+        "ops": 20397,
+        "total_ops": 6607782,
+        "total_ts": 24849,
+        "ts": 99,
+        "xput": 206030
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6628439",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6628439",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 825920264
+          }
+        },
+        "lat": 13092,
+        "mem": 544888,
+        "ops": 20372,
+        "total_ops": 6628154,
+        "total_ts": 24948,
+        "ts": 99,
+        "xput": 205777
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6649096",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6649096",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 828436267
+          }
+        },
+        "lat": 12913,
+        "mem": 545592,
+        "ops": 20654,
+        "total_ops": 6648808,
+        "total_ts": 25047,
+        "ts": 99,
+        "xput": 208626
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6669664",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6669664",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 830938714
+          }
+        },
+        "lat": 12969,
+        "mem": 546168,
+        "ops": 20565,
+        "total_ops": 6669373,
+        "total_ts": 25146,
+        "ts": 99,
+        "xput": 207727
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6690512",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6690512",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 833470223
+          }
+        },
+        "lat": 12793,
+        "mem": 546752,
+        "ops": 20848,
+        "total_ops": 6690221,
+        "total_ts": 25245,
+        "ts": 99,
+        "xput": 210585
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6711237",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6711237",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 835985895
+          }
+        },
+        "lat": 12869,
+        "mem": 547448,
+        "ops": 20724,
+        "total_ops": 6710945,
+        "total_ts": 25344,
+        "ts": 99,
+        "xput": 209333
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6731150",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6731150",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 838405055
+          }
+        },
+        "lat": 13395,
+        "mem": 548032,
+        "ops": 19911,
+        "total_ops": 6730856,
+        "total_ts": 25443,
+        "ts": 99,
+        "xput": 201121
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6751806",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6751806",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 840911029
+          }
+        },
+        "lat": 12912,
+        "mem": 548616,
+        "ops": 20655,
+        "total_ops": 6751511,
+        "total_ts": 25542,
+        "ts": 99,
+        "xput": 208636
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6771354",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6771354",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 843285807
+          }
+        },
+        "lat": 13645,
+        "mem": 549200,
+        "ops": 19546,
+        "total_ops": 6771057,
+        "total_ts": 25641,
+        "ts": 99,
+        "xput": 197434
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6791690",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6791690",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 845762677
+          }
+        },
+        "lat": 13116,
+        "mem": 549780,
+        "ops": 20334,
+        "total_ops": 6791391,
+        "total_ts": 25740,
+        "ts": 99,
+        "xput": 205393
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6812275",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6812275",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 848264295
+          }
+        },
+        "lat": 12959,
+        "mem": 550360,
+        "ops": 20580,
+        "total_ops": 6811971,
+        "total_ts": 25839,
+        "ts": 99,
+        "xput": 207878
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6832596",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6832596",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 850734041
+          }
+        },
+        "lat": 13125,
+        "mem": 551056,
+        "ops": 20320,
+        "total_ops": 6832291,
+        "total_ts": 25938,
+        "ts": 99,
+        "xput": 205252
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6852956",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6852956",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 853208134
+          }
+        },
+        "lat": 13101,
+        "mem": 551640,
+        "ops": 20357,
+        "total_ops": 6852648,
+        "total_ts": 26037,
+        "ts": 99,
+        "xput": 205626
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6873326",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6873326",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 855680938
+          }
+        },
+        "lat": 13094,
+        "mem": 552220,
+        "ops": 20368,
+        "total_ops": 6873016,
+        "total_ts": 26136,
+        "ts": 99,
+        "xput": 205737
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6893894",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6893894",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 858185711
+          }
+        },
+        "lat": 12967,
+        "mem": 552800,
+        "ops": 20567,
+        "total_ops": 6893583,
+        "total_ts": 26235,
+        "ts": 99,
+        "xput": 207747
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6914126",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6914126",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 860654010
+          }
+        },
+        "lat": 13184,
+        "mem": 553380,
+        "ops": 20229,
+        "total_ops": 6913812,
+        "total_ts": 26334,
+        "ts": 99,
+        "xput": 204333
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6934544",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6934544",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 863135891
+          }
+        },
+        "lat": 13064,
+        "mem": 554084,
+        "ops": 20416,
+        "total_ops": 6934228,
+        "total_ts": 26433,
+        "ts": 99,
+        "xput": 206222
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6954829",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6954829",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 865603852
+          }
+        },
+        "lat": 13148,
+        "mem": 554672,
+        "ops": 20284,
+        "total_ops": 6954512,
+        "total_ts": 26532,
+        "ts": 99,
+        "xput": 204888
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6975306",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6975306",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 868092628
+          }
+        },
+        "lat": 13025,
+        "mem": 555256,
+        "ops": 20476,
+        "total_ops": 6974988,
+        "total_ts": 26631,
+        "ts": 99,
+        "xput": 206828
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "6995785",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "6995785",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 870577476
+          }
+        },
+        "lat": 13025,
+        "mem": 555836,
+        "ops": 20477,
+        "total_ops": 6995465,
+        "total_ts": 26730,
+        "ts": 99,
+        "xput": 206838
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7016373",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7016373",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 873080739
+          }
+        },
+        "lat": 12954,
+        "mem": 556416,
+        "ops": 20588,
+        "total_ops": 7016053,
+        "total_ts": 26829,
+        "ts": 99,
+        "xput": 207959
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7036903",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7036903",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 875571446
+          }
+        },
+        "lat": 12991,
+        "mem": 557116,
+        "ops": 20530,
+        "total_ops": 7036583,
+        "total_ts": 26928,
+        "ts": 99,
+        "xput": 207373
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7056058",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7056058",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 877890762
+          }
+        },
+        "lat": 13923,
+        "mem": 557704,
+        "ops": 19155,
+        "total_ops": 7055738,
+        "total_ts": 27027,
+        "ts": 99,
+        "xput": 193484
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7075015",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7075015",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 880197031
+          }
+        },
+        "lat": 14070,
+        "mem": 558172,
+        "ops": 18955,
+        "total_ops": 7074693,
+        "total_ts": 27126,
+        "ts": 99,
+        "xput": 191464
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7094930",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7094930",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 882607780
+          }
+        },
+        "lat": 13392,
+        "mem": 558752,
+        "ops": 19915,
+        "total_ops": 7094608,
+        "total_ts": 27225,
+        "ts": 99,
+        "xput": 201161
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7115160",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7115160",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 885062916
+          }
+        },
+        "lat": 13184,
+        "mem": 559448,
+        "ops": 20230,
+        "total_ops": 7114838,
+        "total_ts": 27324,
+        "ts": 99,
+        "xput": 204343
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7135311",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7135311",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 887514614
+          }
+        },
+        "lat": 13235,
+        "mem": 559912,
+        "ops": 20151,
+        "total_ops": 7134989,
+        "total_ts": 27423,
+        "ts": 99,
+        "xput": 203545
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7155301",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7155301",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 889939164
+          }
+        },
+        "lat": 13342,
+        "mem": 560608,
+        "ops": 19990,
+        "total_ops": 7154979,
+        "total_ts": 27522,
+        "ts": 99,
+        "xput": 201919
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7175486",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7175486",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 892388781
+          }
+        },
+        "lat": 13213,
+        "mem": 561184,
+        "ops": 20185,
+        "total_ops": 7175164,
+        "total_ts": 27621,
+        "ts": 99,
+        "xput": 203888
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7195433",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7195433",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 894812886
+          }
+        },
+        "lat": 13371,
+        "mem": 561772,
+        "ops": 19947,
+        "total_ops": 7195111,
+        "total_ts": 27720,
+        "ts": 99,
+        "xput": 201484
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7215703",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7215703",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 897276694
+          }
+        },
+        "lat": 13158,
+        "mem": 562352,
+        "ops": 20270,
+        "total_ops": 7215381,
+        "total_ts": 27819,
+        "ts": 99,
+        "xput": 204747
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7235036",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7235036",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 899625706
+          }
+        },
+        "lat": 13796,
+        "mem": 562936,
+        "ops": 19332,
+        "total_ops": 7234713,
+        "total_ts": 27918,
+        "ts": 99,
+        "xput": 195272
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7255202",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7255202",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 902079185
+          }
+        },
+        "lat": 13227,
+        "mem": 563520,
+        "ops": 20164,
+        "total_ops": 7254877,
+        "total_ts": 28017,
+        "ts": 99,
+        "xput": 203676
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7275334",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7275334",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 904533918
+          }
+        },
+        "lat": 13248,
+        "mem": 564108,
+        "ops": 20131,
+        "total_ops": 7275008,
+        "total_ts": 28116,
+        "ts": 99,
+        "xput": 203343
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7295268",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7295268",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 906956780
+          }
+        },
+        "lat": 13380,
+        "mem": 564808,
+        "ops": 19932,
+        "total_ops": 7294940,
+        "total_ts": 28215,
+        "ts": 99,
+        "xput": 201333
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7315322",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7315322",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 909397347
+          }
+        },
+        "lat": 13299,
+        "mem": 565388,
+        "ops": 20054,
+        "total_ops": 7314994,
+        "total_ts": 28314,
+        "ts": 99,
+        "xput": 202565
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7335352",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7335352",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 911825981
+          }
+        },
+        "lat": 13317,
+        "mem": 565976,
+        "ops": 20028,
+        "total_ops": 7335022,
+        "total_ts": 28413,
+        "ts": 99,
+        "xput": 202303
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7355426",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7355426",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 914268439
+          }
+        },
+        "lat": 13288,
+        "mem": 566552,
+        "ops": 20071,
+        "total_ops": 7355093,
+        "total_ts": 28512,
+        "ts": 99,
+        "xput": 202737
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7374940",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7374940",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 916635874
+          }
+        },
+        "lat": 13668,
+        "mem": 567132,
+        "ops": 19513,
+        "total_ops": 7374606,
+        "total_ts": 28611,
+        "ts": 99,
+        "xput": 197101
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7394356",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7394356",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 918992978
+          }
+        },
+        "lat": 13737,
+        "mem": 567716,
+        "ops": 19414,
+        "total_ops": 7394020,
+        "total_ts": 28710,
+        "ts": 99,
+        "xput": 196101
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7414307",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7414307",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 921416233
+          }
+        },
+        "lat": 13370,
+        "mem": 568180,
+        "ops": 19948,
+        "total_ops": 7413968,
+        "total_ts": 28809,
+        "ts": 99,
+        "xput": 201494
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7434195",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7434195",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 923836529
+          }
+        },
+        "lat": 13411,
+        "mem": 568872,
+        "ops": 19887,
+        "total_ops": 7433855,
+        "total_ts": 28908,
+        "ts": 99,
+        "xput": 200878
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7453531",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7453531",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 926191068
+          }
+        },
+        "lat": 13793,
+        "mem": 569456,
+        "ops": 19336,
+        "total_ops": 7453191,
+        "total_ts": 29007,
+        "ts": 99,
+        "xput": 195313
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7473079",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7473079",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 928565459
+          }
+        },
+        "lat": 13644,
+        "mem": 570032,
+        "ops": 19547,
+        "total_ops": 7472738,
+        "total_ts": 29106,
+        "ts": 99,
+        "xput": 197444
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7492762",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7492762",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 930958670
+          }
+        },
+        "lat": 13550,
+        "mem": 570616,
+        "ops": 19683,
+        "total_ops": 7492421,
+        "total_ts": 29205,
+        "ts": 99,
+        "xput": 198818
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7512453",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7512453",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 933351337
+          }
+        },
+        "lat": 13547,
+        "mem": 571192,
+        "ops": 19690,
+        "total_ops": 7512111,
+        "total_ts": 29304,
+        "ts": 99,
+        "xput": 198888
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7532196",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7532196",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 935751965
+          }
+        },
+        "lat": 13511,
+        "mem": 571776,
+        "ops": 19740,
+        "total_ops": 7531851,
+        "total_ts": 29403,
+        "ts": 99,
+        "xput": 199393
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7551814",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7551814",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 938139791
+          }
+        },
+        "lat": 13595,
+        "mem": 572244,
+        "ops": 19617,
+        "total_ops": 7551468,
+        "total_ts": 29502,
+        "ts": 99,
+        "xput": 198151
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7571579",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7571579",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 940542292
+          }
+        },
+        "lat": 13496,
+        "mem": 572944,
+        "ops": 19762,
+        "total_ops": 7571230,
+        "total_ts": 29601,
+        "ts": 99,
+        "xput": 199616
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7591010",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7591010",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 942904873
+          }
+        },
+        "lat": 13726,
+        "mem": 573524,
+        "ops": 19430,
+        "total_ops": 7590660,
+        "total_ts": 29700,
+        "ts": 99,
+        "xput": 196262
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7610400",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7610400",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 945267469
+          }
+        },
+        "lat": 13755,
+        "mem": 574108,
+        "ops": 19389,
+        "total_ops": 7610049,
+        "total_ts": 29799,
+        "ts": 99,
+        "xput": 195848
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7629755",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7629755",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 947613442
+          }
+        },
+        "lat": 13780,
+        "mem": 574684,
+        "ops": 19354,
+        "total_ops": 7629403,
+        "total_ts": 29898,
+        "ts": 99,
+        "xput": 195494
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7649196",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7649196",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 949976912
+          }
+        },
+        "lat": 13719,
+        "mem": 575276,
+        "ops": 19440,
+        "total_ops": 7648843,
+        "total_ts": 29997,
+        "ts": 99,
+        "xput": 196363
+      },
+      {
+        "ds_split": {
+          "arcs": [
+            {
+              "max": "7649611",
+              "min": "0",
+              "type": "skiplist"
+            },
+            {
+              "max": "18446744073709551615",
+              "min": "7649611",
+              "type": "google_btree"
+            }
+          ],
+          "policy_engine": {
+            "credits": 950026570
+          }
+        },
+        "lat": 14602,
+        "mem": 575276,
+        "ops": 415,
+        "total_ops": 7649258,
+        "total_ts": 29999,
+        "ts": 2,
+        "xput": 207500
+      }
+    ]
+  },
+  "timestamp": "2020-02-12T08:36:27.062402"
+}
