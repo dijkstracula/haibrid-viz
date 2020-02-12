@@ -12,13 +12,15 @@ class CannedSource {
         this.idx = 0;
         
         setInterval(() => {
-            console.log(this.idx);
             this.idx = (this.idx + 1) % this.samples.length;
         }, 99);
     }
 
     on(event: "message", f: (sample: sample.Sample) => void) {
         setInterval(() => {
+            if (this.samples.length === 0) {
+                return;
+            }
             f(this.samples[this.idx]);
         }, 99);      
     }
