@@ -31,7 +31,8 @@
 a Source is an event generator that consumers can register callbacks against; you give it a function that consumes a Sample object and when new data arrives, that callback gets called with the new Sample data. 
 
 ### Canned source
-For the canned sample event emitter, it just consumes a file of JSON that the REPORT_SAMPLE macro emits (because it's on the backend, and every 99 ms just emits the next one.  
+For the canned sample event emitter, it just consumes a file of JSON that the
+sandwich-load-gen.py script generates, and every 99ms just emits the next one in sequence.  Once the end is reached, it loops from the beginning again.
 
 ### Live source
 For a live source, when ds-split or whatever sends us a sample, we just pass it downstream.
