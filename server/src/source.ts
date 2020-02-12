@@ -22,7 +22,6 @@ class CannedSource {
             if (this.samples.length === 0) {
                 return;
             }
-            console.log(this.samples[this.idx]);
             f(this.samples[this.idx]);
         }, 99);      
     }

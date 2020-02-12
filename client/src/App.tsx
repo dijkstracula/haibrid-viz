@@ -20,6 +20,7 @@ export default class App extends Component<{}, AppState> {
       samples.shift()
     }
     samples.push(s);
+    
     this.setState(this.state);
   }
 
@@ -48,10 +49,18 @@ export default class App extends Component<{}, AppState> {
   }
   render() {
     return (
-      <div className="App">
-        <h3>{this.state.msg}</h3>
-        <h3>{this.state.samples.length}</h3>
-        <LatencyLineGraph samples={this.state.samples} />
+      <div>
+        <header><h1>HAIbrid visualizer</h1></header>
+        <div className="App">
+          <div>
+            <h2>Latency</h2>
+          <LatencyLineGraph samples={this.state.samples} />
+          </div>
+          <div className="foo">
+            <h2>Current datapoint</h2>
+            <pre>{JSON.stringify(this.state.samples[this.state.samples.length - 1],null,2)}</pre>
+          </div>
+        </div>
       </div>
     )
   }
