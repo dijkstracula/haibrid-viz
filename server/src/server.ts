@@ -1,11 +1,10 @@
 import express from "express";
-import path from "path";
-import cors from "cors";
-import CannedSource from "./source";
 import WebSocket from "ws";
 
-// 
+import CannedSource from "./source";
+import {Workload} from "./interfaces";
 
+// 
 const source = new CannedSource("../data/test.json");
 
 // Websocket server
@@ -21,7 +20,13 @@ wss.on("connection", function connection(ws: WebSocket) {
     });
 
     source.on("message", function(s: Sample) {
-        ws.send(JSON.stringify({"msg": "Incoming sample", "sample": s}));
+        const wk = {alpha: 1} as Workload;
+
+        ws.send(JSON.stringify({
+            "msg": "update", 
+            "sample": s,
+            "workload": wk}
+        ));
     });
 });
 
@@ -35,7 +40,7 @@ app.set("port", process.env.PORT || 3001);
 
 // routes
 import * as routes from "./routes";
-import { Sample } from "./sample";
+import { Sample } from "./interfaces";
 app.get("/status", routes.status);
 
 const server = app.listen(app.get("port"), () => {

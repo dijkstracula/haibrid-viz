@@ -1,7 +1,7 @@
 // A source emits samples.
 import * as fs from "fs";
 import EventEmitter from "events";
-import {Sample} from "./sample";
+import {Sample} from "./interfaces";
 
 class CannedSource {
     public samples: Sample[]

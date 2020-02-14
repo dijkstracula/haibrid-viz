@@ -18,6 +18,11 @@ header {
   height: 100px;
 }
 
+rect {
+  fill: blue;
+  stroke: white;
+}
+
 h1 {
   text-align: center;
   color: white;

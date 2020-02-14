@@ -20,3 +20,7 @@ export interface Sample {
     ts: number;
     total_ts: number;
 };
+
+export interface Workload {
+    alpha: number; 
+}

@@ -1,5 +1,5 @@
 import WebSocket from "ws";
-import {Sample} from "./sample";
+
 const wss = new WebSocket.Server({ port: 3030 });
 
 wss.on("connection", function connection(ws: WebSocket) {
