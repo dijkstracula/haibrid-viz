@@ -17,13 +17,13 @@ wss.on("connection", function connection(ws: WebSocket) {
     
     ws.on("message", function incoming(data: string) {
         console.log("TODO: received " + data);
-    });
+    }); 
 
     source.on("message", function(s: Sample) {
-        const wk = {alpha: 1} as Workload;
+        const wk = {alpha: 1, indel: 1.0, range: 0.0} as Workload;
 
         ws.send(JSON.stringify({
-            "msg": "update", 
+            "type": "sample", 
             "sample": s,
             "workload": wk}
         ));

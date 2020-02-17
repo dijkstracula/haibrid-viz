@@ -1,5 +1,8 @@
 // TODO: how to share this file between client and server?
 
+export type ClientMsg = "workload";
+export type ServerMsg = "sample";
+
 export interface Arc {
     min: string;
     max: string;
@@ -22,5 +25,7 @@ export interface Sample {
 };
 
 export interface Workload {
+    indel: number;
+    range: number;
     alpha: number; 
 }
