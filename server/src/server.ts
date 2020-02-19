@@ -1,11 +1,10 @@
-import express from "express";
 import WebSocket from "ws";
 
-import CannedSource from "./source";
-import {Workload} from "./interfaces";
+import CannedSource from "./CannedSource";
+import {Workload, Sample, ClientMsg} from "./interfaces";
 
 // 
-const source = new CannedSource("../data/test.json");
+const source = new CannedSource("../data/sandwich.json");
 
 // Websocket server
 const wss = new WebSocket.Server({ port: 3030 });
@@ -16,12 +15,15 @@ wss.on("connection", function connection(ws: WebSocket) {
     ws.send(JSON.stringify({"msg": "Greetings"}));
     
     ws.on("message", function incoming(data: string) {
+        const blob = JSON.parse(data);
         console.log("TODO: received " + data);
+        switch(blob["type"] as ClientMsg) {
+            case "workload":
+                source.updateWorkload(blob["workload"]);
+        }
     }); 
 
-    source.on("message", function(s: Sample) {
-        const wk = {alpha: 1, indel: 1.0, range: 0.0} as Workload;
-
+    source.on("message", function(s: Sample, wk: Workload) {
         ws.send(JSON.stringify({
             "type": "sample", 
             "sample": s,
@@ -29,21 +31,3 @@ wss.on("connection", function connection(ws: WebSocket) {
         ));
     });
 });
-
-
-// HTTP server (don't know if we actually need this, in the end?)
-
-const app = express();
-
-app.set("port", process.env.PORT || 3001);
-//app.use(cors);
-
-// routes
-import * as routes from "./routes";
-import { Sample } from "./interfaces";
-app.get("/status", routes.status);
-
-const server = app.listen(app.get("port"), () => {
-    console.log("Backend listening on port %d", app.get("port"));
-});
-

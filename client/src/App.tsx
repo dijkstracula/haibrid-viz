@@ -38,9 +38,8 @@ export default class App extends Component<{}, AppState> {
       case "sample":
           const s = blob["sample"] as Sample
           const wk = blob["workload"] as Workload
-          console.log(blob["workload"])
           this.append_sample(s)
-          this.setState({workload: blob["workload"]})
+          this.setState({workload: wk})
     }
   }
 
@@ -48,11 +47,9 @@ export default class App extends Component<{}, AppState> {
   // Invoked when the user has changed the workload sliders.
   onUpdateWorkload(w: Workload) {
     this.setState({workload: w})
-    const blob = {
-      type: "workload",
-      workload: w
-    }
+
     if (this.ws !== undefined) {
+      const blob = { type: "workload", workload: w }
       this.ws.send(JSON.stringify(blob))
     }
   }
