@@ -57,6 +57,7 @@ $ sudo apt-get install -y nodejs
 ## Install dependencies
 
 ```
+$ npm install -g concurrently
 $ npm run install
 ```
 

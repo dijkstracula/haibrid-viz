@@ -1,6 +1,35 @@
 // A source emits samples.
 import * as fs from "fs";
-import {Sample, Workload, Arc, DataStructure} from "./interfaces";
+import {Sample, Workload, Arc} from "./interfaces";
+
+export class SampleIterator {
+    public ds: string
+    samples: Sample[]
+    idx = 0
+
+    constructor(ds: string, samples: Sample[]) {
+        this.ds = ds;
+        this.samples = samples;
+    }
+
+    reset() {
+        this.idx = 0;
+    }
+
+    next(): boolean {
+        if (this.idx === this.samples.length - 1) {
+            return false;
+        } else {
+            ++this.idx;
+            console.log(`${this.ds}: ${this.idx}`);
+            return true;
+        }
+    }
+
+    get(): Sample {
+        return this.samples[this.idx];
+    }
+}
 
 // A Phase comprises a set of Samples, either representing a transition from
 // some structure to another, or the steady-state of a particular workload.
@@ -8,56 +37,72 @@ class Phase {
     begin: number
     end: number
     name: string
-    //type: PhaseType
     wk: Workload
-    samples: Sample[]
+    iterators: SampleIterator[]
 
-    static From(objblob: any, samples: Sample[]): Phase {
+    toString(): string { return JSON.stringify(this);}
+
+    static From(objblob: any, runs: Record<string, Sample[]>): Phase {
         const begin: number = objblob["begin"];
         const end: number = objblob["end"];
         const name: string = objblob["name"];
         const wk: Workload = objblob["workload"];
+        const iterators: SampleIterator[] = [];
         
         // TODO: we should bsearch.  Ah well.
-        const i = samples.findIndex((s) => s.total_ts >= begin);
-        const j = samples.findIndex((s) => s.total_ts >= end);
+        for (const ds in runs) {
+            const s = runs[ds] as Sample[];
+            const b = s.findIndex((s) => s.total_ts >= begin);
+            const e = s.findIndex((s) => s.total_ts >= end);
+
+            iterators.push(new SampleIterator(ds, s.slice(b,e)));
+        }
         
         return {
-            begin, end, name, wk, samples: samples.slice(i,j)
+            begin, end, name, wk, iterators: iterators
         };
     }
 }
 
-class CannedSource {
-    samples: Sample[]
+export class CannedSource {
     currentPhase: Phase
-    idx: number = 0
     workloads: Workload[] = []
     graph: Map<string, Phase> = new Map<string, Phase>();
 
+    nextPhase() {
+        // If we have exhausted the current phase's samples,
+        // transition to the steady state for this workload.
+
+        // Need to stringify for deep object comparision, ugh!
+        const key = JSON.stringify([this.currentPhase.wk, this.currentPhase.wk]);
+        this.currentPhase = this.graph.get(key);
+        if (this.currentPhase === undefined) {
+            throw new Error(`Missing key: ${key}`);
+        }
+        console.log(`Transitioning to ${key}`);
+    }
     constructor(path: string) {
         const blob = JSON.parse(fs.readFileSync(path, "utf8"));
         this.currentPhase = this.initPhaseGraph(blob);
 
         setInterval(() => {
-            const str = JSON.stringify(this.currentPhase.wk);
-            console.log(str + " " + this.idx);
+            for (const it of this.currentPhase.iterators) {
+                const incomplete = it.next();
 
-            this.idx++;
-            if (this.idx >= this.currentPhase.samples.length) {
-                // If we have exhausted the current phase's samples,
-                // transition to the steady state for this workload.
-                const key = JSON.stringify([this.currentPhase.wk, this.currentPhase.wk]);
-                console.log(`Transitioning to ${key}`);
-                this.currentPhase = this.graph.get(key);
-                this.idx = 0;
+                // The phases might not all have the same length; with a long recording,
+                // perhaps a bit of jitter was inserted over time.  We jump to the next
+                // phase the moment the first iterator runs dry.
+                if (!incomplete) {
+                    this.nextPhase();
+                    return;
+                }
             }
         }, 99);
     }
 
     updateWorkload(w: Workload) {
         let bestWk = this.workloads[0];
-        let bestDist = 99999;
+        let bestDist = Number.MAX_SAFE_INTEGER;
 
         for (const i in this.workloads) {
             const currWk = this.workloads[i];
@@ -69,6 +114,7 @@ class CannedSource {
             }
         }
 
+        // Deep equality check, l o l
         if (JSON.stringify(this.currentPhase.wk) === JSON.stringify(bestWk)) {
             return;
         }
@@ -81,17 +127,16 @@ class CannedSource {
         }
         console.log(`Transitioning to ${key}`);
         this.currentPhase = newPhase;
-        this.idx = 0;
     }
 
     initPhaseGraph(blob: any): Phase {
-        const phases = blob["phases"] as Record<string, any>[];
-        const samples = blob["runs"]["split"] as Sample[];
+        const phases = blob["phases"] as Record<string, Phase>[];
+        const runs = blob["runs"] as Record<string, Sample[]>; // l o l
 
         // We record workloads in the following way:
         // Assume the following workload: aba .  In this workload, we want to have
         // transitions from 'a->b', 'b->a', and steady-state loops for 'a' and 'b'.
-        //
+        //  
         // Bench-ds would actually run two copies of each workload next to each other,
         // so we would have `-w aabbaa` in the CLI args.  (Or, in the workload file, or...)
         //
@@ -108,8 +153,8 @@ class CannedSource {
         // the uberstructure's starting backing structure matches the first workload, so
         // we disregard it just to be safe.
         for (let i = 1; i < phases.length - 1; i+=2) {
-            const steady = Phase.From(phases[i], samples);
-            const trans = Phase.From(phases[i+1], samples);
+            const steady = Phase.From(phases[i], runs);
+            const trans = Phase.From(phases[i+  1], runs);
 
             this.workloads.push(steady.wk);
             this.graph.set(JSON.stringify([steady.wk, steady.wk]), steady);
@@ -120,14 +165,12 @@ class CannedSource {
         return(this.graph.get(JSON.stringify([phases[1].workload,phases[1].workload])));
     }
 
-    on(event: "message", f: (s: Sample, wk: Workload) => void) {
+    on(event: "message", f: (s: SampleIterator, wk: Workload) => void) {
         setInterval(() => {
-            if (this.currentPhase.samples.length === 0) {
-                return;
+            const wk = this.currentPhase.wk;
+            for (const ds of this.currentPhase.iterators) {
+                f(ds, wk);
             }
-            f(this.currentPhase.samples[this.idx], this.currentPhase.wk);
         }, 99);      
     }
 }
-
-export default CannedSource;

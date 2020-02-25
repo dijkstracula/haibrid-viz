@@ -14,7 +14,7 @@ export interface PolicyEngine {
 };
 
 export interface Sample {
-    arcs: Arc[];
+    ds_split: { arcs: Arc[] }
     policy_engine: PolicyEngine;
     lat: number;
     ops: number;

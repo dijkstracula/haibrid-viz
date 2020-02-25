@@ -1,7 +1,7 @@
 import WebSocket from "ws";
 
-import CannedSource from "./CannedSource";
-import {Workload, Sample, ClientMsg} from "./interfaces";
+import {SampleIterator, CannedSource} from "./source";
+import {Workload,ClientMsg} from "./interfaces";
 
 // 
 const source = new CannedSource("../data/sandwich.json");
@@ -16,17 +16,16 @@ wss.on("connection", function connection(ws: WebSocket) {
     
     ws.on("message", function incoming(data: string) {
         const blob = JSON.parse(data);
-        console.log("TODO: received " + data);
         switch(blob["type"] as ClientMsg) {
             case "workload":
                 source.updateWorkload(blob["workload"]);
         }
     }); 
 
-    source.on("message", function(s: Sample, wk: Workload) {
+    source.on("message", function(s: SampleIterator, wk: Workload) {
         ws.send(JSON.stringify({
             "type": "sample", 
-            "sample": s,
+            "sample": s.get(),
             "workload": wk}
         ));
     });

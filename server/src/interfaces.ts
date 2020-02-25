@@ -2,21 +2,9 @@
 
 export type ClientMsg = "workload";
 export type ServerMsg = "sample" | "msg";
-
-export type DataStructure = 
-    "rb_tree"         | 
-    "sorted_array"    | 
-    "stl_hash"        |
-    "hs_hash"         | 
-    "hs_probe_hash"   | 
-    "skiplist"        | 
-    "google_btree"    | 
-    "linked_hash"     | 
-    "dual_btree_hash" | 
-    "sorted_set" 
     
 export interface Arc {
-    ds: DataStructure;
+    ds: string;
     min: string;
     max: string;
 };
@@ -40,7 +28,9 @@ export interface Message {
     msg: string;
 }
 
-export interface Workload {
+export class Workload {
     indel: number;
     range: number;
+
+    toString(): string { return JSON.stringify(this);}
 }

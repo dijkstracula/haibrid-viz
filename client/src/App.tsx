@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import {LatencyLineGraph} from './components/LatencyLineGraph'
-import {ClientMsg, Sample, Workload, ServerMsg} from './interfaces';
+import {ClientMsg, Sample, Workload, ServerMsg, Arc} from './interfaces';
 import { WorkloadSliders } from './components/WorkloadSliders';
+import { ArcsetHistogram } from './components/ArcsetHistogram';
 
 type AppState = {
   msg: String
@@ -82,23 +83,31 @@ export default class App extends Component<{}, AppState> {
   }
 
   render() {
+    const mostRecentSample = this.state.samples[this.state.samples.length - 1]
+    const arcset: Arc[] = mostRecentSample ? 
+      (mostRecentSample.ds_split ? mostRecentSample.ds_split.arcs : [] ) : []
+
     return (
       <div>
-        <header><h1>HAIbrid visualizer</h1></header>
         <div className="App">
           <div>
             <h2>Latency</h2>
           <LatencyLineGraph samples={this.state.samples} />
           </div>
-          <div>
-            <h2>Workload</h2>
-            <WorkloadSliders 
-              workload={this.state.workload} 
-              onChange={(w) => this.onUpdateWorkload(w)}/>
+          <div className="container flex-direction=column">
+            <div>
+              <h2>Workload</h2>
+              <WorkloadSliders 
+                workload={this.state.workload} 
+                onChange={(w) => this.onUpdateWorkload(w)}/>
+            </div>
+            <div>
+              <ArcsetHistogram arcs={arcset} />
+            </div>
           </div>
-          <div className="foo">
+          <div className="container flex-direction=column">
             <h2>Current datapoint</h2>
-            <pre>{JSON.stringify(this.state.samples[this.state.samples.length - 1],null,2)}</pre>
+            <pre>{JSON.stringify(mostRecentSample,null,2)}</pre>
             {this.state.workload.alpha}
           </div>
         </div>
