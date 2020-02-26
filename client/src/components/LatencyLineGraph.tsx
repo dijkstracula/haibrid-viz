@@ -61,7 +61,7 @@ export const LatencyLineGraph = (props: Props) => {
     const map = groupByDS(props.samples)
     for (let ds of Array.from(map.keys())) {
       const samples = map.get(ds) as Sample[]
-      if (samples === undefined || samples.length == 0) {
+      if (samples === undefined || samples.length === 0) {
         continue
       }
 

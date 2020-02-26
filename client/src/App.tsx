@@ -22,14 +22,18 @@ export default class App extends Component<{}, AppState> {
 
   ws: WebSocket | undefined
 
-  append_sample(s: Sample) {
+  append_samples(l: Sample[]): Sample[] {
     let samples = this.state.samples;
-    samples.push(s)
 
+    // Set the timestamp of the samples we've received.
     const current_ts = Date.now()
-    s.ts = current_ts
+    l.forEach((s) => s.ts = current_ts)
+    
     samples = samples.filter((s) => current_ts - s.ts < 5000)
-    this.setState({samples: samples})
+
+    samples = samples.concat(l)
+    console.log(samples.length)
+    return samples
   }
 
   // Invoked when a message from the server has been received.
@@ -37,11 +41,11 @@ export default class App extends Component<{}, AppState> {
     const blob = JSON.parse(ev.data)
   
     switch (blob["type"] as ServerMsg) {
-      case "sample":
-          const s = blob["sample"] as Sample
+      case "samples":
+          const l = blob["samples"] as Sample[]
           const wk = blob["workload"] as Workload
-          this.append_sample(s)
-          this.setState({workload: wk})
+          const samples = this.append_samples(l)
+          this.setState({samples: samples, workload: wk})
     }
   }
 

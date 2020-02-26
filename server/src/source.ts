@@ -168,12 +168,10 @@ export class CannedSource {
         return(this.graph.get(JSON.stringify([phases[1].workload,phases[1].workload])));
     }
 
-    on(event: "message", f: (s: SampleIterator, wk: Workload) => void) {
+    on(event: "message", f: (its: SampleIterator[], wk: Workload) => void) {
         setInterval(() => {
             const wk = this.currentPhase.wk;
-            for (const ds of this.currentPhase.iterators) {
-                f(ds, wk);
-            }
+            f(this.currentPhase.iterators, wk);
         }, 99);      
     }
 }

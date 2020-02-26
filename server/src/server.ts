@@ -1,7 +1,7 @@
 import WebSocket from "ws";
 
 import {SampleIterator, CannedSource} from "./source";
-import {Workload,ClientMsg} from "./interfaces";
+import {Workload,ClientMsg, ServerMsg} from "./interfaces";
 
 // 
 const source = new CannedSource("../data/sandwich_multiple.json");
@@ -22,11 +22,11 @@ wss.on("connection", function connection(ws: WebSocket) {
         }
     }); 
 
-    source.on("message", function(it: SampleIterator, wk: Workload) {
+    source.on("message", function(its: SampleIterator[], wk: Workload) {
+        const samples = its.map((it) => it.get());
         ws.send(JSON.stringify({
-            "type": "sample", 
-            "ds": it.ds,
-            "sample": it.get(),
+            "type": "samples" as ServerMsg,
+            "samples": samples,
             "workload": wk}
         ));
     });

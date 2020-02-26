@@ -11,5 +11,7 @@
   "dependencies": {
     "concurrently": "^5.1.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "react-app-polyfill": "^1.0.6"
+  }
 }
