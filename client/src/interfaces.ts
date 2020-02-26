@@ -14,8 +14,15 @@ export interface PolicyEngine {
 };
 
 export interface Sample {
-    ds_split: { arcs: Arc[] }
-    policy_engine: PolicyEngine;
+    ds: string,
+
+    // Only defined if ds == split
+    // TODO: refactor this
+    split_internals?: { 
+        arcs: Arc[]
+        policy_engine: PolicyEngine
+    }
+
     lat: number;
     ops: number;
     mem: number;
@@ -24,8 +31,10 @@ export interface Sample {
     total_ts: number;
 };
 
-export interface Workload {
-    indel: number;
-    range: number;
-    alpha: number; 
+export class Workload {
+    indel = 0
+    range = 0
+    alpha = 0
+    
+    toString(): string { return JSON.stringify(this);}
 }

@@ -24,10 +24,11 @@ export default class App extends Component<{}, AppState> {
 
   append_sample(s: Sample) {
     let samples = this.state.samples;
-    if (samples.length >= 50) {
-      samples.shift()
-    }
     samples.push(s)
+
+    const current_ts = Date.now()
+    s.ts = current_ts
+    samples = samples.filter((s) => current_ts - s.ts < 5000)
     this.setState({samples: samples})
   }
 
@@ -85,7 +86,7 @@ export default class App extends Component<{}, AppState> {
   render() {
     const mostRecentSample = this.state.samples[this.state.samples.length - 1]
     const arcset: Arc[] = mostRecentSample ? 
-      (mostRecentSample.ds_split ? mostRecentSample.ds_split.arcs : [] ) : []
+      (mostRecentSample.split_internals ? mostRecentSample.split_internals.arcs : [] ) : []
 
     return (
       <div>
@@ -107,7 +108,7 @@ export default class App extends Component<{}, AppState> {
           </div>
           <div className="container flex-direction=column">
             <h2>Current datapoint</h2>
-            <pre>{JSON.stringify(mostRecentSample,null,2)}</pre>
+            <pre>N/A</pre>
             {this.state.workload.alpha}
           </div>
         </div>

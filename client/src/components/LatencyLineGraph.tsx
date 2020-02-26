@@ -6,9 +6,23 @@ interface Props {
     samples: Sample[];
 }
 
+function groupByDS(samples: Sample[]): Map<string, Sample[]> {
+  let map = new Map<string, Sample[]>()
+
+  for (let s of samples) {
+    const ds = s.ds 
+    let samples = map.get(ds)
+    if (samples === undefined) {
+      map.set(ds, [])
+    } else {
+      samples.push(s)
+    }
+  }
+
+  return map
+}
+
 export const LatencyLineGraph = (props: Props) => {
-
-
   const svg_root = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
   const svg_chart = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
   const svg_x_axis = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
@@ -18,13 +32,12 @@ export const LatencyLineGraph = (props: Props) => {
   const width = 640 - margin.left - margin.right
   const height = 300 - margin.top - margin.bottom
 
-  let x = d3.scaleLinear().range([0, width])
-  let y = d3.scaleLinear().range([height, 0])
+  let x = d3.scaleLinear().range([0, width - 20])
+  let y = d3.scaleLog().base(2).range([height, 0])
 
   React.useEffect(() => {
-
     x.domain([0, 50]).nice()
-    y.domain([0, d3.max(props.samples, (s) => s.lat) as number]).nice()
+    y.domain([1, d3.max(props.samples, (s) => s.lat) as number]).nice()
 
     // Draw axes
     d3.select(svg_x_axis.current)
@@ -34,34 +47,44 @@ export const LatencyLineGraph = (props: Props) => {
 
     // Label axes
 
-    d3.select(svg_x_axis.current)  
-      .append("text")          
-      .attr("transform",
-            "translate(" + (width/2) + " ," + 
-                           (height + margin.top + 20) + ")")
-      .style("text-anchor", "middle")
-      .text("Date");
-
     const line = d3.line<Sample>()
       .x((_,i) => x(i))
       .y((s) => y(s.lat))
 
     d3.select(svg_chart.current)
-      .select("path")
+      .selectAll("path")
+      .remove()
+    d3.select(svg_chart.current)
+      .selectAll("text")
       .remove()
 
-    d3.select(svg_chart.current)
-      .append("path")
-      .datum(props.samples)
-      .transition()
-      .attr("class", "line")
-      .attr("d", line)
+    const map = groupByDS(props.samples)
+    for (let ds of Array.from(map.keys())) {
+      const samples = map.get(ds) as Sample[]
+      if (samples === undefined || samples.length == 0) {
+        continue
+      }
+
+      d3.select(svg_chart.current)
+        .append("path")
+        .datum(samples)
+        .transition()
+        .attr("class", "line")
+        .attr("d", line)
+
+      const final_lat = samples[samples.length - 1].lat 
+      d3.select(svg_chart.current)
+        .append("text")
+        .attr("transform", "translate(" + x(50) + "," + y(final_lat) + ")")
+        .attr("dy", ".35em")
+        .attr("text-anchor", "start")
+        .style("fill", "red")
+        .text(ds)
+    }
 
     d3.select(svg_chart.current)
       .exit()
       .remove()
-
-
   },
   [props, svg_root.current])
 

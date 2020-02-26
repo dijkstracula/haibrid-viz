@@ -4,7 +4,7 @@ import {SampleIterator, CannedSource} from "./source";
 import {Workload,ClientMsg} from "./interfaces";
 
 // 
-const source = new CannedSource("../data/sandwich.json");
+const source = new CannedSource("../data/sandwich_multiple.json");
 
 // Websocket server
 const wss = new WebSocket.Server({ port: 3030 });
@@ -22,10 +22,11 @@ wss.on("connection", function connection(ws: WebSocket) {
         }
     }); 
 
-    source.on("message", function(s: SampleIterator, wk: Workload) {
+    source.on("message", function(it: SampleIterator, wk: Workload) {
         ws.send(JSON.stringify({
             "type": "sample", 
-            "sample": s.get(),
+            "ds": it.ds,
+            "sample": it.get(),
             "workload": wk}
         ));
     });

@@ -14,8 +14,15 @@ export interface PolicyEngine {
 };
 
 export interface Sample {
-    arcs: Arc[];
-    policy_engine: PolicyEngine;
+    ds: string;
+
+    // Only defined if ds == split
+    // TODO: refactor this
+    split_internals?: { 
+        arcs: Arc[];
+        policy_engine: PolicyEngine;
+    };
+
     lat: number;
     ops: number;
     mem: number;
@@ -23,7 +30,6 @@ export interface Sample {
     ts: number;
     total_ts: number;
 };
-
 export interface Message {
     msg: string;
 }

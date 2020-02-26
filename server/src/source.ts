@@ -10,6 +10,7 @@ export class SampleIterator {
     constructor(ds: string, samples: Sample[]) {
         this.ds = ds;
         this.samples = samples;
+        samples.forEach((s) => s.ds = ds); //TODO: this seems slightly silly, I donno.
     }
 
     reset() {
@@ -21,7 +22,7 @@ export class SampleIterator {
             return false;
         } else {
             ++this.idx;
-            console.log(`${this.ds}: ${this.idx}`);
+            //console.log(`${this.ds}: ${this.idx}`);
             return true;
         }
     }
@@ -78,8 +79,9 @@ export class CannedSource {
         this.currentPhase = this.graph.get(key);
         if (this.currentPhase === undefined) {
             throw new Error(`Missing key: ${key}`);
-        }
-        console.log(`Transitioning to ${key}`);
+        }        
+        console.log(`Transitioning to ${key} (finished)`);
+        this.currentPhase.iterators.forEach((i) => i.reset());
     }
     constructor(path: string) {
         const blob = JSON.parse(fs.readFileSync(path, "utf8"));
@@ -125,8 +127,9 @@ export class CannedSource {
         if (newPhase === undefined) {
             throw new Error(`Missing key: ${key}`);
         }
-        console.log(`Transitioning to ${key}`);
+        console.log(`Transitioning to ${key} (update)`);
         this.currentPhase = newPhase;
+        this.currentPhase.iterators.forEach((i) => i.reset());
     }
 
     initPhaseGraph(blob: any): Phase {

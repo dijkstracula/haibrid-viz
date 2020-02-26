@@ -7,8 +7,6 @@ interface Props {
 }
 
 export const SkewHistogram = (props: Props) => {
-
-
   const svg_root = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
   const slider = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
 
