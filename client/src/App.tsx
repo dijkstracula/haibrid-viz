@@ -4,10 +4,12 @@ import {LatencyLineGraph} from './components/LatencyLineGraph'
 import {ClientMsg, Sample, Workload, ServerMsg, Arc} from './interfaces';
 import { WorkloadSliders } from './components/WorkloadSliders';
 import { ArcsetHistogram } from './components/ArcsetHistogram';
+import { DataStructureChooser } from './components/DataStructureChooser';
 
 type AppState = {
   msg: String
   samples: Sample[]
+  actives: string[]
   workload: Workload
 }
 
@@ -16,6 +18,7 @@ const URL = "ws://localhost:3030";
 export default class App extends Component<{}, AppState> {
   public state: AppState = {
     samples: [], 
+    actives: ["split", "hs_hash", "google_btree", "skiplist"], //TODO
     msg: "Connecting to " + URL + "...", 
     workload: {alpha: 0, indel: 0.0, range: 0.0}
   };
@@ -97,7 +100,10 @@ export default class App extends Component<{}, AppState> {
         <div className="App">
           <div>
             <h2>Latency</h2>
-          <LatencyLineGraph samples={this.state.samples} />
+          <LatencyLineGraph 
+            samples={this.state.samples} 
+            actives={this.state.actives}
+          />
           </div>
           <div className="container flex-direction=column">
             <div>
@@ -105,6 +111,13 @@ export default class App extends Component<{}, AppState> {
               <WorkloadSliders 
                 workload={this.state.workload} 
                 onChange={(w) => this.onUpdateWorkload(w)}/>
+            </div>
+            <div>
+              <h2>Legend</h2>
+              <DataStructureChooser 
+                structures={this.state.actives} //TODO
+                actives={this.state.actives}
+                onChange={(as: string[]) => console.log(as)} />
             </div>
             <div>
               <ArcsetHistogram arcs={arcset} />

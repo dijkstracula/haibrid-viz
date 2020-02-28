@@ -3,14 +3,15 @@ import * as d3 from 'd3';
 import { Sample } from '../interfaces';
 
 interface Props {
-    samples: Sample[];
+    samples: Sample[]
+    actives: string[]
 }
 
 function groupByDS(samples: Sample[]): Map<string, Sample[]> {
   let map = new Map<string, Sample[]>()
 
   for (let s of samples) {
-    const ds = s.ds 
+    const ds = s.ds
     let samples = map.get(ds)
     if (samples === undefined) {
       map.set(ds, [])
@@ -62,6 +63,9 @@ export const LatencyLineGraph = (props: Props) => {
     for (let ds of Array.from(map.keys())) {
       const samples = map.get(ds) as Sample[]
       if (samples === undefined || samples.length === 0) {
+        continue
+      }
+      if (props.actives.find((a) => a === ds) === undefined) {
         continue
       }
 
