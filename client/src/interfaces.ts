@@ -34,7 +34,6 @@ export interface Sample {
 export class Workload {
     indel = 0
     range = 0
-    alpha = 0
     
     toString(): string { return JSON.stringify(this);}
 }

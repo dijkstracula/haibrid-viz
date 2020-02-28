@@ -19,7 +19,7 @@ export const WorkloadSliders = (props: Props) => {
             range = 1 - indel
         }
         //TODO: onChange something like react's setState?
-        props.onChange({indel: indel, range: range, alpha: props.workload.alpha})
+        props.onChange({indel: indel, range: range})
     }
 
     const onRangeUpdate = (range: number) => {
@@ -30,7 +30,7 @@ export const WorkloadSliders = (props: Props) => {
             indel = 1 - range;
         }
         //TODO: onChange something like react's setState?
-        props.onChange({indel: indel, range: range, alpha: props.workload.alpha})
+        props.onChange({indel: indel, range: range})
     }
 
     return (

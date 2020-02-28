@@ -8,6 +8,7 @@ import { DataStructureChooser } from './components/DataStructureChooser';
 
 type AppState = {
   msg: String
+  arcset: Arc[]
   samples: Sample[]
   actives: string[]
   workload: Workload
@@ -18,20 +19,35 @@ const URL = "ws://localhost:3030";
 export default class App extends Component<{}, AppState> {
   public state: AppState = {
     samples: [], 
+    arcset: [],
     actives: ["split", "hs_hash", "google_btree", "skiplist"], //TODO
     msg: "Connecting to " + URL + "...", 
-    workload: {alpha: 0, indel: 0.0, range: 0.0}
+    workload: {indel: 0.0, range: 0.0}
   };
 
   ws: WebSocket | undefined
 
-  append_samples(l: Sample[]): Sample[] {
+  // Consumes a list of sample updates, and returns the final arcset
+  // in the updates, if one exists.  if one doesn't, then just return
+  // the existing arcset.
+  update_arcset(l: Sample[]): Arc[] {
+    for (let i = l.length-1; i >= 0; i--) {
+      const s = l[i]
+      if (s.split_internals) {
+        return s.split_internals.arcs
+      }
+    }
+    return this.state.arcset
+  }
+
+  update_samples(l: Sample[]): Sample[] {
     let samples = this.state.samples;
 
     // Set the timestamp of the samples we've received.
     const current_ts = Date.now()
     l.forEach((s) => s.ts = current_ts)
     
+    //todo: find index of first valid ts and slice from there?
     samples = samples.filter((s) => current_ts - s.ts < 5000)
 
     samples = samples.concat(l)
@@ -47,8 +63,11 @@ export default class App extends Component<{}, AppState> {
       case "samples":
           const l = blob["samples"] as Sample[]
           const wk = blob["workload"] as Workload
-          const samples = this.append_samples(l)
-          this.setState({samples: samples, workload: wk})
+          const samples = this.update_samples(l)
+          const arcset = this.update_arcset(l)
+          this.setState({
+            samples: samples, 
+            workload: wk, arcset: arcset})
     }
   }
 
@@ -58,8 +77,8 @@ export default class App extends Component<{}, AppState> {
     this.setState({workload: w})
 
     if (this.ws !== undefined) {
-      const blob = { type: "workload", workload: w }
-      this.ws.send(JSON.stringify(blob))
+      const json = { type: "workload", workload: w }
+      this.ws.send(JSON.stringify(json))
     }
   }
 
@@ -91,19 +110,21 @@ export default class App extends Component<{}, AppState> {
   }
 
   render() {
-    const mostRecentSample = this.state.samples[this.state.samples.length - 1]
-    const arcset: Arc[] = mostRecentSample ? 
-      (mostRecentSample.split_internals ? mostRecentSample.split_internals.arcs : [] ) : []
-
     return (
       <div>
         <div className="App">
-          <div>
-            <h2>Latency</h2>
-          <LatencyLineGraph 
-            samples={this.state.samples} 
-            actives={this.state.actives}
-          />
+          <div className="container flex-direction=column">
+            <div>
+              <h2>Latency</h2>
+              <LatencyLineGraph 
+                samples={this.state.samples} 
+                actives={this.state.actives}
+              />
+            </div>
+            <div>
+              <h2>Substructure</h2>
+              <ArcsetHistogram arcs={this.state.arcset} />
+            </div>
           </div>
           <div className="container flex-direction=column">
             <div>
@@ -119,14 +140,10 @@ export default class App extends Component<{}, AppState> {
                 actives={this.state.actives}
                 onChange={(as: string[]) => console.log(as)} />
             </div>
-            <div>
-              <ArcsetHistogram arcs={arcset} />
-            </div>
           </div>
           <div className="container flex-direction=column">
             <h2>Current datapoint</h2>
-            <pre>N/A</pre>
-            {this.state.workload.alpha}
+            <pre>{JSON.stringify(this.state.samples.find((s) => s.ds === "split"))} </pre>
           </div>
         </div>
         <footer>{this.state.msg}</footer>

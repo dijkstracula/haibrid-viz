@@ -10,7 +10,9 @@ export class SampleIterator {
     constructor(ds: string, samples: Sample[]) {
         this.ds = ds;
         this.samples = samples;
-        samples.forEach((s) => s.ds = ds); //TODO: this seems slightly silly, I donno.
+        samples.forEach((s) => {
+            s.ds = ds; //TODO: this seems slightly silly, I donno.
+        });
     }
 
     reset() {
@@ -84,9 +86,13 @@ export class CannedSource {
         this.currentPhase.iterators.forEach((i) => i.reset());
     }
     constructor(path: string) {
+        console.log("Reading workload blob at " + path);
         const blob = JSON.parse(fs.readFileSync(path, "utf8"));
+
+        console.log("Initing phase graph...");
         this.currentPhase = this.initPhaseGraph(blob);
 
+        console.log("Registering transition callback...");
         setInterval(() => {
             for (const it of this.currentPhase.iterators) {
                 const incomplete = it.next();
