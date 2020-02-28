@@ -51,7 +51,6 @@ export default class App extends Component<{}, AppState> {
     samples = samples.filter((s) => current_ts - s.ts < 5000)
 
     samples = samples.concat(l)
-    console.log(samples.length)
     return samples
   }
 
