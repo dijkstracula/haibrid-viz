@@ -16,11 +16,13 @@ type AppState = {
 
 const URL = "ws://localhost:3030";
 
+const STRUCTURES =  ["split", "hs_hash", "google_btree", "skiplist"] //TODO, shouldn't hard code these
+
 export default class App extends Component<{}, AppState> {
   public state: AppState = {
     samples: [], 
     arcset: [],
-    actives: ["split", "hs_hash", "google_btree", "skiplist"], //TODO
+    actives: STRUCTURES,
     msg: "Connecting to " + URL + "...", 
     workload: {indel: 0.0, range: 0.0}
   };
@@ -136,9 +138,9 @@ export default class App extends Component<{}, AppState> {
             <div>
               <h2>Legend</h2>
               <DataStructureChooser 
-                structures={this.state.actives} //TODO
+                structures={STRUCTURES} //TODO
                 actives={this.state.actives}
-                onChange={(as: string[]) => console.log(as)} />
+                onChange={(as: string[]) => this.setState({actives: as}) } />
             </div>
           </div>
           <div className="container flex-direction=column">

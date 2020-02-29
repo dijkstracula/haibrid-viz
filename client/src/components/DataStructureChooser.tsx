@@ -8,15 +8,23 @@ interface Props {
 }
 
 function inputsFromProps(props: Props): JSX.Element[] {
+    let actives = new Set<string>(props.actives)
     return props.structures.map((s: string) => {
-        const checked = (props.actives.find((a) => a === s) !== undefined)
         return (
             <li>
             <label>
                 {s}
                 <input 
                     type="checkbox"
-                    checked={checked}
+                    checked={actives.has(s)}
+                    onChange={(e) => {
+                        if (e.target.checked) {
+                            actives.add(s)
+                        } else {
+                            actives.delete(s)
+                        }
+                        props.onChange(Array.from(actives.values()))
+                    }}
                 >
                 </input>
             </label>
