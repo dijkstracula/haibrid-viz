@@ -1,6 +1,7 @@
 import * as React from 'react';
 import * as d3 from 'd3';
 import { Sample } from '../interfaces';
+import * as helpers from './helpers';
 
 interface Props {
     samples: Sample[]
@@ -34,7 +35,7 @@ export const LatencyLineGraph = (props: Props) => {
   const height = 300 - margin.top - margin.bottom
 
   let x = d3.scaleLinear().range([0, width - 20])
-  let y = d3.scaleLog().base(2).range([height, 0])
+  let y = d3.scaleLog().base(2).range([height, 32])
 
   React.useEffect(() => {
     x.domain([0, 50]).nice()
@@ -75,6 +76,8 @@ export const LatencyLineGraph = (props: Props) => {
         .transition()
         .attr("class", "line")
         .attr("d", line)
+        .attr("stroke", helpers.colour_for_ds(ds))
+        .attr("stroke-dasharray", helpers.stroke_dasharray_for_ds(ds))
 
       const final_lat = samples[samples.length - 1].lat 
       d3.select(svg_chart.current)
@@ -82,8 +85,8 @@ export const LatencyLineGraph = (props: Props) => {
         .attr("transform", "translate(" + x(50) + "," + y(final_lat) + ")")
         .attr("dy", ".35em")
         .attr("text-anchor", "start")
-        .style("fill", "red")
-        .text(ds)
+        .attr("fill", helpers.colour_for_ds(ds))
+        .text(helpers.name_for_ds(ds))
     }
 
     d3.select(svg_chart.current)

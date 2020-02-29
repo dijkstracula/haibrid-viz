@@ -11,6 +11,7 @@ function inputsFromProps(props: Props): JSX.Element[] {
     return props.structures.map((s: string) => {
         const checked = (props.actives.find((a) => a === s) !== undefined)
         return (
+            <li>
             <label>
                 {s}
                 <input 
@@ -18,7 +19,8 @@ function inputsFromProps(props: Props): JSX.Element[] {
                     checked={checked}
                 >
                 </input>
-            </label>)
+            </label>
+            </li>)
     })
 }
 export const DataStructureChooser = (props: Props) => {

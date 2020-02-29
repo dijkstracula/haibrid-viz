@@ -1,6 +1,5 @@
-import * as React from 'react';
-import * as d3 from 'd3';
-import { svg, randomExponential } from 'd3';
+import * as React from 'react'
+import * as d3 from 'd3'
 
 interface Props {
     alpha: number

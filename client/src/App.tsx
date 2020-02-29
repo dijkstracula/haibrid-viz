@@ -66,7 +66,8 @@ export default class App extends Component<{}, AppState> {
           const arcset = this.update_arcset(l)
           this.setState({
             samples: samples, 
-            workload: wk, arcset: arcset})
+            workload: wk, 
+            arcset: arcset})
     }
   }
 
@@ -141,8 +142,9 @@ export default class App extends Component<{}, AppState> {
             </div>
           </div>
           <div className="container flex-direction=column">
-            <h2>Current datapoint</h2>
-            <pre>{JSON.stringify(this.state.samples.find((s) => s.ds === "split"))} </pre>
+            <h2>Description</h2>
+            <p>Some context-sensitive text should probably
+            go here at some point.</p>
           </div>
         </div>
         <footer>{this.state.msg}</footer>

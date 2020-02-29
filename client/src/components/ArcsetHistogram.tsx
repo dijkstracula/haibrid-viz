@@ -1,6 +1,8 @@
 import * as React from 'react';
 import * as d3 from 'd3';
 import { Arc } from '../interfaces';
+import * as helpers from './helpers'
+
 
 interface Props {
     arcs: Arc[]
@@ -10,7 +12,7 @@ export const ArcsetHistogram = (props: Props) => {
   const svg_root = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
 
   const width = 640
-  const height = 20
+  const height = 100
 
 
   //TODO: the sandwich workload script sohuld emit N and s
@@ -57,7 +59,9 @@ export const ArcsetHistogram = (props: Props) => {
       .append("rect")
       .attr('width', (d) => x(d.size))
       .attr('y', 0)
-      .attr('height', height)
+      .attr('height', 20)
+      .attr('fill', (d) => helpers.colour_for_ds(d.type))
+      
     
     svg.selectAll("text")
       .remove()
@@ -65,12 +69,21 @@ export const ArcsetHistogram = (props: Props) => {
       .data(data)
       .enter()
       .append("text")
-      .text((d) => d.type)
+      .text((d) => helpers.name_for_ds(d.type))
       .attr('x', (d) => Math.min(x(d.size), width) - 80)
       .attr('y', 10)
      // .style("text-align", "right")
       .attr("fill", "white")
 
+          // axis
+
+    svg.selectAll("g")
+    .remove()
+    .exit()
+
+  svg.append("g")
+    .attr("transform", `translate(0, ${20})`)
+    .call(d3.axisBottom(x).ticks(10).tickFormat(((i) => `${i.valueOf() * 100}%` )))
  
         /*
     svg
