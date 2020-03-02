@@ -43,13 +43,12 @@ export default class App extends Component<{}, AppState> {
   }
 
   update_samples(l: Sample[]): Sample[] {
-    let samples = this.state.samples;
-
     // Set the timestamp of the samples we've received.
     const current_ts = Date.now()
     l.forEach((s) => s.ts = current_ts)
     
     //todo: find index of first valid ts and slice from there?
+    let samples = this.state.samples;
     samples = samples.filter((s) => current_ts - s.ts < 5000)
 
     samples = samples.concat(l)
@@ -61,15 +60,24 @@ export default class App extends Component<{}, AppState> {
     const blob = JSON.parse(ev.data)
   
     switch (blob["type"] as ServerMsg) {
+      case "message":
+        const msg = blob["msg"] as string
+        this.setState({msg: msg})
+
       case "samples":
-          const l = blob["samples"] as Sample[]
-          const wk = blob["workload"] as Workload
-          const samples = this.update_samples(l)
-          const arcset = this.update_arcset(l)
-          this.setState({
-            samples: samples, 
-            workload: wk, 
-            arcset: arcset})
+        const l = blob["samples"] as Sample[]
+        const wk = blob["workload"] as Workload
+        
+        if (l === undefined || wk === undefined) {
+          return
+        }
+
+        const samples = this.update_samples(l)
+        const arcset = this.update_arcset(l)
+        this.setState({
+          samples: samples, 
+          workload: wk, 
+          arcset: arcset})
     }
   }
 
@@ -149,7 +157,7 @@ export default class App extends Component<{}, AppState> {
             go here at some point.</p>
           </div>
         </div>
-        <footer>{this.state.msg}</footer>
+        <div className="footer">{this.state.msg}</div>
       </div>
     )
   }

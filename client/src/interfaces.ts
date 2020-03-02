@@ -1,7 +1,7 @@
 // TODO: how to share this file between client and server?
 
 export type ClientMsg = "workload";
-export type ServerMsg = "samples" | "msg";
+export type ServerMsg = "samples" | "message";
 
 export interface Arc {
     min: string;
