@@ -3,8 +3,6 @@ import WebSocket from "ws";
 import {SampleIterator, CannedSource} from "./source";
 import {Workload, ClientMsg, Sample, ServerMsg} from "./interfaces";
 
-const source = new CannedSource("../data/sweep_0_1.json");
-
 // Handlers for each kind of ServerMsg
 
 function sendMsg(ws: WebSocket, msg: string) {
@@ -24,6 +22,7 @@ function sendSamples(ws: WebSocket, samples: Sample[], wk: Workload) {
         "workload": wk}
     ));
 }
+const source = new CannedSource("../data/sweep_0_5.json");
 
 // Websocket server
 const wss = new WebSocket.Server({ port: 3030 });
