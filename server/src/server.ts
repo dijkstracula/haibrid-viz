@@ -43,11 +43,11 @@ wss.on("connection", function connection(ws: WebSocket) {
     });
 
     source.on("message", function(its: SampleIterator[], wk: Workload) {
-        console.log(wk);
         const samples = its.map((it) => it.get());
         if (samples === undefined) {
             return;
         }
+        //console.log(samples[0].total_ts);
         sendSamples(ws, samples, wk);
     });
 });

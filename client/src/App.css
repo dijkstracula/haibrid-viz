@@ -14,7 +14,7 @@ body {
 
 header {
   background: purple;
-  height: 100px;
+  height: 75px;
 }
 
 rect {
@@ -40,6 +40,8 @@ h2 {
 
 .footer {
   position: fixed;
+  background: purple;
+  color: white;
   left: 0;
   bottom: 0;
   width: 100%;
