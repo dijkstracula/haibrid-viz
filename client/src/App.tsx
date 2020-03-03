@@ -87,7 +87,7 @@ export default class App extends Component<{}, AppState> {
     this.setState({workload: w})
 
     if (this.ws !== undefined) {
-      const json = { type: "workload", workload: w }
+      const json = { type: "workload" as ClientMsg, workload: w }
       this.ws.send(JSON.stringify(json))
     }
   }
@@ -157,7 +157,7 @@ export default class App extends Component<{}, AppState> {
             go here at some point.</p>
           </div>
         </div>
-        <div className="footer">{this.state.msg}</div>
+        <div className="footer">Current status: <b>{this.state.msg}</b></div>
       </div>
     )
   }

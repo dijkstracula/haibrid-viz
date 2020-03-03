@@ -2,9 +2,11 @@ import WebSocket from "ws";
 
 import {SampleIterator, CannedSource} from "./source";
 import {Workload, ClientMsg, Sample, ServerMsg} from "./interfaces";
+import { IncomingMessage } from "http";
+
+const source = new CannedSource("../data/sweep_0_5.json")
 
 // Handlers for each kind of ServerMsg
-
 function sendMsg(ws: WebSocket, msg: string) {
     ws.send(JSON.stringify({
         "type": "message" as ServerMsg,
@@ -22,23 +24,26 @@ function sendSamples(ws: WebSocket, samples: Sample[], wk: Workload) {
         "workload": wk}
     ));
 }
-const source = new CannedSource("../data/sweep_0_5.json");
 
 // Websocket server
 const wss = new WebSocket.Server({ port: 3030 });
-wss.on("connection", function connection(ws: WebSocket) {
-    console.log("New connection");
-    console.log("Now serving " + wss.clients.size + " connections");
+wss.on("connection", function connection(ws: WebSocket, req: IncomingMessage) {
+    console.log("New connection from " + req.socket.remoteAddress);
 
-    wss.clients.forEach((ws) => sendMsg(ws, "Now serving " + wss.clients.size + " connections"));
+    sendMsg(ws, "Greetings from HAIbrid!");
 
-    sendMsg(ws, "Greetings!");
+    ws.on("close", function(code: number, reason: string) {
+        console.log("Dropped connection from " + req.socket.remoteAddress);
+        wss.clients.forEach((ws) => sendMsg(ws, `Now serving ${wss.clients.size} connections`));
+    });
 
     ws.on("message", function incoming(data: string) {
         const blob = JSON.parse(data);
         switch(blob["type"] as ClientMsg) {
             case "workload":
                 source.updateWorkload(blob["workload"]);
+                wss.clients.forEach((dst) => 
+                    sendMsg(dst, "Workload changed by " + req.socket.remoteAddress));
         }
     });
 
