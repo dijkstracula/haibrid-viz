@@ -14,16 +14,17 @@ type AppState = {
   workload: Workload
 }
 
-const URL = "ws://nathan.westus2.cloudapp.azure.com:3030";
+//const URL = "ws://nathan.westus2.cloudapp.azure.com:3030";
+const URL = "ws://localhost:3030";
 
 const STRUCTURES =  ["split", "hs_hash", "google_btree", "skiplist"] //TODO, shouldn't hard code these
 
 export default class App extends Component<{}, AppState> {
   public state: AppState = {
-    samples: [], 
+    samples: [],
     arcset: [],
     actives: STRUCTURES,
-    msg: "Connecting to " + URL + "...", 
+    msg: "Connecting to " + URL + "...",
     workload: {indel: 0.0, range: 0.0}
   };
 
@@ -46,7 +47,7 @@ export default class App extends Component<{}, AppState> {
     // Set the timestamp of the samples we've received.
     const current_ts = Date.now()
     l.forEach((s) => s.ts = current_ts)
-    
+
     //todo: find index of first valid ts and slice from there?
     let samples = this.state.samples;
     samples = samples.filter((s) => current_ts - s.ts < 5000)
@@ -58,7 +59,7 @@ export default class App extends Component<{}, AppState> {
   // Invoked when a message from the server has been received.
   onMessage(ev: MessageEvent) {
     const blob = JSON.parse(ev.data)
-  
+
     switch (blob["type"] as ServerMsg) {
       case "message":
         const msg = blob["msg"] as string
@@ -67,7 +68,7 @@ export default class App extends Component<{}, AppState> {
       case "samples":
         const l = blob["samples"] as Sample[]
         const wk = blob["workload"] as Workload
-        
+
         if (l === undefined || wk === undefined) {
           return
         }
@@ -75,13 +76,13 @@ export default class App extends Component<{}, AppState> {
         const samples = this.update_samples(l)
         const arcset = this.update_arcset(l)
         this.setState({
-          samples: samples, 
-          workload: wk, 
+          samples: samples,
+          workload: wk,
           arcset: arcset})
     }
   }
 
-    
+
   // Invoked when the user has changed the workload sliders.
   onUpdateWorkload(w: Workload) {
     this.setState({workload: w})
@@ -102,7 +103,7 @@ export default class App extends Component<{}, AppState> {
         this.setState({msg: "Connected to " + URL})
         retries = 0
       }
-  
+
       this.ws.onmessage = (ev) => { this.onMessage(ev) }
 
       this.ws.onclose = () => {
@@ -126,8 +127,8 @@ export default class App extends Component<{}, AppState> {
           <div className="container flex-direction=column">
             <div>
               <h2>Latency</h2>
-              <LatencyLineGraph 
-                samples={this.state.samples} 
+              <LatencyLineGraph
+                samples={this.state.samples}
                 actives={this.state.actives}
               />
             </div>
@@ -139,13 +140,13 @@ export default class App extends Component<{}, AppState> {
           <div className="container flex-direction=column">
             <div>
               <h2>Workload</h2>
-              <WorkloadSliders 
-                workload={this.state.workload} 
+              <WorkloadSliders
+                workload={this.state.workload}
                 onChange={(w) => this.onUpdateWorkload(w)}/>
             </div>
             <div>
               <h2>Legend</h2>
-              <DataStructureChooser 
+              <DataStructureChooser
                 structures={STRUCTURES} //TODO
                 actives={this.state.actives}
                 onChange={(as: string[]) => this.setState({actives: as}) } />

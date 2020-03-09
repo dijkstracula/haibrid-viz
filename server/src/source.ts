@@ -11,6 +11,9 @@ export class SampleIterator {
         this.ds = ds;
         this.samples = samples;
         samples.forEach((s) => {
+            s.lat = s.lat / s.ts * 1000;
+            s.ops = s.ops / s.ts * 1000;
+            s.xput = s.ts / s.ts * 1000;
             s.ds = ds; //TODO: this seems slightly silly, I donno.
         });
     }
@@ -58,7 +61,9 @@ class Phase {
             const b = s.findIndex((s) => s.total_ts >= begin);
             const e = s.findIndex((s) => s.total_ts >= end);
 
-            iterators.push(new SampleIterator(ds, s.slice(b,e)));
+            // We discard the last element, since it may only be a partially-
+            // complete time slice and so absolute numbers may appear spuriously-higher.
+            iterators.push(new SampleIterator(ds, s.slice(b,e-1)));
         }
         
         return {
@@ -162,12 +167,15 @@ export class CannedSource {
         // the uberstructure's starting backing structure matches the first workload, so
         // we disregard it just to be safe.
         for (let i = 1; i < phases.length - 1; i+=2) {
-            const steady = Phase.From(phases[i], runs);
-            const trans = Phase.From(phases[i+  1], runs);
+            const from = Phase.From(phases[i], runs);
+            const to = Phase.From(phases[i+1], runs);
 
-            this.workloads.push(steady.wk);
-            this.graph.set(JSON.stringify([steady.wk, steady.wk]), steady);
-            this.graph.set(JSON.stringify([steady.wk, trans.wk]), trans);
+            this.workloads.push(from.wk);
+            this.graph.set(JSON.stringify([from.wk, to.wk]), to);
+
+            if (from.wk === to.wk) {
+                this.graph.set(JSON.stringify([to.wk, to.wk]), to);
+            }
         }
 
         // Initialise with the first workload's steady state.

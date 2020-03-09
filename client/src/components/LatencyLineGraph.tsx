@@ -39,7 +39,10 @@ export const LatencyLineGraph = (props: Props) => {
 
   React.useEffect(() => {
     x.domain([0, 50]).nice()
-    y.domain([1, d3.max(props.samples, (s) => s.lat) as number]).nice()
+    y.domain([100, d3.max(
+      props.samples.filter((s) => props.actives.find((a) => a === s.ds)), 
+      (s) => s.lat) as number])
+      .nice()
 
     // Draw axes
     d3.select(svg_x_axis.current)
