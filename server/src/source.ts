@@ -185,8 +185,10 @@ export class CannedSource {
             const from = Phase.From(phases[i], runs);
             const to = Phase.From(phases[i+1], runs);
 
-            this.workloads.push(from.wk);
-            this.graph.set(JSON.stringify([from.wk, to.wk]), to);
+            if (!this.graph.has(JSON.stringify([from.wk, to.wk]))) {
+                this.workloads.push(from.wk);
+                this.graph.set(JSON.stringify([from.wk, to.wk]), to);
+            }
 
             if (from.wk === to.wk) {
                 if (!this.graph.has(JSON.stringify([to.wk, to.wk]))) {

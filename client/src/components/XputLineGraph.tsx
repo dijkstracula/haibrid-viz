@@ -38,7 +38,7 @@ export const XputLineGraph = (props: Props) => {
   let y = d3.scaleLog().base(10).range([height, 32])
 
   React.useEffect(() => {
-    x.domain([0, 50]).nice()
+    x.domain([0, 50])
     y.domain([
         d3.min(
           props.samples.filter((s) => props.actives.find((a) => a === s.ds)), 
@@ -50,11 +50,11 @@ export const XputLineGraph = (props: Props) => {
         (s) => s.xput
       ) as number
     ])
-      .nice()
+    .nice()
 
     // Draw axes
     d3.select(svg_x_axis.current)
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x).tickFormat((x) => ""));
     d3.select(svg_y_axis.current)
       .call(d3.axisLeft(y));
 

@@ -64,7 +64,8 @@ export default class App extends Component<{}, AppState> {
       case "message":
         const msg = blob["msg"] as string
         this.setState({msg: msg})
-
+        break
+        
       case "samples":
         const l = blob["samples"] as Sample[]
         const wk = blob["workload"] as Workload
