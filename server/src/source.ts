@@ -112,18 +112,18 @@ export class CannedSource {
 
         console.log("Registering transition callback...");
         setInterval(() => {
-            let incomplete = false;
-
             for (const it of this.currentPhase.iterators) {
-                incomplete = it.next() || incomplete;
+                const incomplete = it.next();
+
+                // The phases might not all have the same length; with a long recording,
+                // perhaps a bit of jitter was inserted over time.  We jump to the next
+                // phase the moment the first iterator runs dry.
+                if (!incomplete) {
+                    this.nextPhase();
+                    return;
+                }
             }
             
-            // The phases might not all have the same length; with a long recording,
-            // perhaps a bit of jitter was inserted over time.  We jump to the next
-            // phase the moment the first iterator runs dry.
-            if (!incomplete) {
-                this.nextPhase();
-            }
 
         }, 99);
     }
@@ -189,7 +189,9 @@ export class CannedSource {
             this.graph.set(JSON.stringify([from.wk, to.wk]), to);
 
             if (from.wk === to.wk) {
-                this.graph.set(JSON.stringify([to.wk, to.wk]), to);
+                if (!this.graph.has(JSON.stringify([to.wk, to.wk]))) {
+                    this.graph.set(JSON.stringify([to.wk, to.wk]), to);
+                }
             }
         }
 

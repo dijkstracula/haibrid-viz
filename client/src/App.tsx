@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
-import {LatencyLineGraph} from './components/LatencyLineGraph'
 import {ClientMsg, Sample, Workload, ServerMsg, Arc} from './interfaces';
 import { WorkloadSliders } from './components/WorkloadSliders';
 import { ArcsetHistogram } from './components/ArcsetHistogram';
 import { DataStructureChooser } from './components/DataStructureChooser';
+import { XputLineGraph } from './components/XputLineGraph';
 
 type AppState = {
   msg: String
@@ -126,8 +126,8 @@ export default class App extends Component<{}, AppState> {
         <div className="App">
           <div className="container flex-direction=column">
             <div>
-              <h2>Latency</h2>
-              <LatencyLineGraph
+              <h2>Throughput</h2>
+              <XputLineGraph
                 samples={this.state.samples}
                 actives={this.state.actives}
               />
