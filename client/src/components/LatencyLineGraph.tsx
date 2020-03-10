@@ -30,7 +30,7 @@ export const LatencyLineGraph = (props: Props) => {
   const svg_x_axis = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
   const svg_y_axis = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
 
-  const margin = {top: 20, right: 20, bottom: 20, left: 50}
+  const margin = {top: 20, right: 50, bottom: 20, left: 50}
   const width = 640 - margin.left - margin.right
   const height = 300 - margin.top - margin.bottom
 
@@ -76,16 +76,16 @@ export const LatencyLineGraph = (props: Props) => {
       d3.select(svg_chart.current)
         .append("path")
         .datum(samples)
-        .transition()
         .attr("class", "line")
         .attr("d", line)
         .attr("stroke", helpers.colour_for_ds(ds))
         .attr("stroke-dasharray", helpers.stroke_dasharray_for_ds(ds))
-
+        .attr("stroke-linejoin", "round")
+        
       const final_lat = samples[samples.length - 1].lat 
       d3.select(svg_chart.current)
         .append("text")
-        .attr("transform", "translate(" + x(50) + "," + y(final_lat) + ")")
+        .attr("transform", "translate(" + x(50) + "," + (50 * y(final_lat))/50 + ")")
         .attr("dy", ".35em")
         .attr("text-anchor", "start")
         .attr("fill", helpers.colour_for_ds(ds))

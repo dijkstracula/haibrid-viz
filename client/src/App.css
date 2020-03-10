@@ -1,15 +1,16 @@
 body {
-  font: 14px sans-serif;
+  font: 14px "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: #606c76;
   margin: 0;
+}
+
+.container {
+  padding: 25px 25px 25px 25px;
 }
 
 .line {
   fill: none;
   stroke-width: 2px;
-}
-
-body {
-  margin: 0;
 }
 
 header {

@@ -9,12 +9,22 @@ export class SampleIterator {
 
     constructor(ds: string, samples: Sample[]) {
         this.ds = ds;
-        this.samples = samples;
-        samples.forEach((s) => {
+        this.samples = samples.flatMap((s) => {
             s.lat = s.lat / s.ts * 1000;
             s.ops = s.ops / s.ts * 1000;
-            s.xput = s.ts / s.ts * 1000;
+            s.xput = s.xput / s.ts * 1000;
             s.ds = ds; //TODO: this seems slightly silly, I donno.
+
+            // Certain samples (in particular, stop-the-world bulk transitions)
+            // will take far longer than the normal timestamp.  For those,
+            // just duplicate the timestamp so eg. a 180 ms sample is
+            // reported twice, a 270 ms sample is reported thrice, etc...
+            const repeats = Math.ceil(s.ts / 99);
+            const ret: Sample[] = [];
+            for (let i = 0; i < repeats; i++) {
+                ret.push(s);
+            }
+            return ret;
         });
     }
 
@@ -81,15 +91,18 @@ export class CannedSource {
         // If we have exhausted the current phase's samples,
         // transition to the steady state for this workload.
 
+        
         // Need to stringify for deep object comparision, ugh!
         const key = JSON.stringify([this.currentPhase.wk, this.currentPhase.wk]);
-        this.currentPhase = this.graph.get(key);
-        if (this.currentPhase === undefined) {
+        const nexts = this.graph.get(key);
+        if (nexts === undefined) {
             throw new Error(`Missing key: ${key}`);
         }        
+        nexts.iterators.forEach((i) => i.reset());
         console.log(`Transitioning to ${key} (finished)`);
-        this.currentPhase.iterators.forEach((i) => i.reset());
+        this.currentPhase = nexts;
     }
+
     constructor(path: string) {
         console.log("Reading workload blob at " + path);
         const blob = JSON.parse(fs.readFileSync(path, "utf8"));
@@ -99,17 +112,19 @@ export class CannedSource {
 
         console.log("Registering transition callback...");
         setInterval(() => {
-            for (const it of this.currentPhase.iterators) {
-                const incomplete = it.next();
+            let incomplete = false;
 
-                // The phases might not all have the same length; with a long recording,
-                // perhaps a bit of jitter was inserted over time.  We jump to the next
-                // phase the moment the first iterator runs dry.
-                if (!incomplete) {
-                    this.nextPhase();
-                    return;
-                }
+            for (const it of this.currentPhase.iterators) {
+                incomplete = it.next() || incomplete;
             }
+            
+            // The phases might not all have the same length; with a long recording,
+            // perhaps a bit of jitter was inserted over time.  We jump to the next
+            // phase the moment the first iterator runs dry.
+            if (!incomplete) {
+                this.nextPhase();
+            }
+
         }, 99);
     }
 
@@ -138,9 +153,9 @@ export class CannedSource {
         if (newPhase === undefined) {
             throw new Error(`Missing key: ${key}`);
         }
+        newPhase.iterators.forEach((i) => i.reset());
         console.log(`Transitioning to ${key} (update)`);
         this.currentPhase = newPhase;
-        this.currentPhase.iterators.forEach((i) => i.reset());
     }
 
     initPhaseGraph(blob: any): Phase {
