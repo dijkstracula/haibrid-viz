@@ -159,23 +159,14 @@ export default class App extends Component<{}, AppState> {
               HAIbrid tries to achieve universally good performance regardless of the workload by 
               dynamically transitioning between optimal structures (learned offline). Try changing 
               the workload parameters on the left and watch HAIbrid switch from one structure to 
-              another! For example:
+              another!
             </p>
             <p>
-              <li>
-              Make the number of range queries greater than 0. HAIbrid immediately realizes that a hashtable 
-              is a bad structure and transitions to a B-tree. Since a hashtable is unordered, 
-              the transition happens in one shot, resulting in a dip in performance followed by 
-              near-optimal performance matching a B-tree.
-              </li>
-              <li>
-              Next, reduce the range queries back to 0. HAIbrid immediately realizes that a 
-              hashtable is a better structure and transitions to it. Since a B-tree is ordered, the 
-              transition is done gradually over time. When enough items have been transferred to the 
-              hashtable, the superior performance of queries hitting the hashtable outweights the cost 
-              of transitioning, until eventually the transition is complete and we achieve near-optimal 
-              performance matching the hashtable.
-              </li>
+              For example, when there are a number of range queries in the workload, the HAIbrid
+              data structure ensures that it remains ordered (in this case, our offline learning
+              algorithm decided upon a B-Tree rather than the also-available skiplist).  When 
+              the workload shifts to only point queries, the HAIbrid structure relaxes ordering
+              for better performance, discards ordering information, and migrates to a hashtable.
             </p>
           </div>
         </div>
