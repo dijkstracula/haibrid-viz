@@ -17,7 +17,7 @@ export const ArcsetHistogram = (props: Props) => {
 
   //TODO: the sandwich workload script sohuld emit N and s
   const s = 1         // spacing between keys
-  const N = 2.5*10**7   // number of keys
+  const N = 2.5*10**6   // number of keys
   const max_key = 18446744073709551615
 
   React.useEffect(() => {

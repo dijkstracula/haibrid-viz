@@ -14,8 +14,8 @@ type AppState = {
   workload: Workload
 }
 
-const URL = "ws://nathan.westus2.cloudapp.azure.com:3030";
-//const URL = "ws://localhost:3030";
+//const URL = "ws://nathan.westus2.cloudapp.azure.com:3030";
+const URL = "ws://localhost:3030";
 
 const STRUCTURES =  ["split", "hs_hash", "google_btree", "skiplist"] //TODO, shouldn't hard code these
 
