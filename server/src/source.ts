@@ -10,9 +10,9 @@ export class SampleIterator {
     constructor(ds: string, samples: Sample[]) {
         this.ds = ds;
         this.samples = samples.flatMap((s) => {
-            s.lat = Math.round(s.lat / s.ts * 1000)
-            s.ops = Math.round(s.ops / s.ts * 1000)
-            s.xput = Math.round(s.xput / s.ts * 1000) || 1 //if it's 0, the log scale complains, so make it 1
+            s.lat = Math.round(s.lat / s.ts * 1000);
+            s.ops = Math.round(s.ops / s.ts * 1000);
+            s.xput = Math.round(s.xput / s.ts * 1000) || 1; //if it's 0, the log scale complains, so make it 1
             s.ds = ds; //TODO: this seems slightly silly, I donno.
 
             // Certain samples (in particular, stop-the-world bulk transitions)
@@ -22,16 +22,16 @@ export class SampleIterator {
             const repeats = Math.round(s.ts / 99);
 
             if (repeats <= 1) {
-                return [s]
+                return [s];
             }
 
             const ret: Sample[] = [];
             for (let i = 0; i < repeats; i++) {
-                let clone = {...s}
-                clone["total_ts"] -= (repeats - i) * 50
+                const clone = {...s};
+                clone["total_ts"] -= (repeats - i) * 50;
                 ret.push(clone);
             }
-            return ret
+            return ret;
         });
     }
 

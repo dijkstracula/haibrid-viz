@@ -155,8 +155,28 @@ export default class App extends Component<{}, AppState> {
           </div>
           <div className="container flex-direction=column">
             <h2>Description</h2>
-            <p>Some context-sensitive text should probably
-            go here at some point.</p>
+            <p>This demo shows a HAIbrid index structure in action. 
+              HAIbrid tries to achieve universally good performance regardless of the workload by 
+              dynamically transitioning between optimal structures (learned offline). Try changing 
+              the workload parameters on the left and watch HAIbrid switch from one structure to 
+              another! For example:
+            </p>
+            <p>
+              <li>
+              Make the number of range queries greater than 0. HAIbrid immediately realizes that a hashtable 
+              is a bad structure and transitions to a B-tree. Since a hashtable is unordered, 
+              the transition happens in one shot, resulting in a dip in performance followed by 
+              near-optimal performance matching a B-tree.
+              </li>
+              <li>
+              Next, reduce the range queries back to 0. HAIbrid immediately realizes that a 
+              hashtable is a better structure and transitions to it. Since a B-tree is ordered, the 
+              transition is done gradually over time. When enough items have been transferred to the 
+              hashtable, the superior performance of queries hitting the hashtable outweights the cost 
+              of transitioning, until eventually the transition is complete and we achieve near-optimal 
+              performance matching the hashtable.
+              </li>
+            </p>
           </div>
         </div>
         <div className="footer">Current status: <b>{this.state.msg}</b></div>
