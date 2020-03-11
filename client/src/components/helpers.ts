@@ -5,11 +5,11 @@ export function name_for_ds(ds: string) {
         case "split":
             return "HAIbrid"
         case "hs_hash":
-            return "hash table"
+            return "Hash Table"
         case "google_btree":
-            return "B-tree"
+            return "B-Tree"
         case "skiplist":
-            return "skip list"
+            return "Skiplist"
     }
     return "???"
 }

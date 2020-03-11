@@ -17,7 +17,7 @@ function groupByDS(samples: Sample[]): Map<string, Sample[]> {
     if (samples === undefined) {
       map.set(ds, [])
     } else {
-      samples.push(s)
+        samples.push(s)
     }
   }
 
@@ -40,15 +40,15 @@ export const XputLineGraph = (props: Props) => {
   React.useEffect(() => {
     x.domain([0, 50])
     y.domain([
-        d3.min(
+        (d3.min(
           props.samples.filter((s) => props.actives.find((a) => a === s.ds)), 
           (s) => s.xput
-        ) as number
+        ) as number) || 10**1
       , 
-      d3.max(
+      (d3.max(
         props.samples.filter((s) => props.actives.find((a) => a === s.ds)), 
         (s) => s.xput
-      ) as number
+      ) as number) || 10**7
     ])
     .nice()
 
@@ -89,7 +89,7 @@ export const XputLineGraph = (props: Props) => {
         .attr("stroke", helpers.colour_for_ds(ds))
         .attr("stroke-dasharray", helpers.stroke_dasharray_for_ds(ds))
         .attr("stroke-linejoin", "round")
-        
+
       const avg_xput = samples.slice(samples.length - 5, samples.length)
         .map((s) => s.xput)
         .reduce((p, c) => p+c) / 5

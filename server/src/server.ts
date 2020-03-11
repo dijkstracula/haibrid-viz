@@ -4,7 +4,7 @@ import {SampleIterator, CannedSource} from "./source";
 import {Workload, ClientMsg, Sample, ServerMsg} from "./interfaces";
 import { IncomingMessage } from "http";
 
-const source = new CannedSource("../data/sweep_0_5.json");
+const source = new CannedSource("../data/sweep_0_25.json");
 
 // Handlers for each kind of ServerMsg
 function sendMsg(ws: WebSocket, msg: string) {

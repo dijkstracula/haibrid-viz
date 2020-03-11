@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as d3 from 'd3';
+import * as helpers from './helpers'
 
 interface Props {
     structures: string[]
@@ -13,7 +14,7 @@ function inputsFromProps(props: Props): JSX.Element[] {
         return (
             <li>
             <label>
-                {s}
+                {helpers.name_for_ds(s)}
                 <input 
                     type="checkbox"
                     checked={actives.has(s)}

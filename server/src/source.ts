@@ -10,21 +10,28 @@ export class SampleIterator {
     constructor(ds: string, samples: Sample[]) {
         this.ds = ds;
         this.samples = samples.flatMap((s) => {
-            s.lat = s.lat / s.ts * 1000;
-            s.ops = s.ops / s.ts * 1000;
-            s.xput = s.xput / s.ts * 1000;
+            s.lat = Math.round(s.lat / s.ts * 1000)
+            s.ops = Math.round(s.ops / s.ts * 1000)
+            s.xput = Math.round(s.xput / s.ts * 1000) || 1 //if it's 0, the log scale complains, so make it 1
             s.ds = ds; //TODO: this seems slightly silly, I donno.
 
             // Certain samples (in particular, stop-the-world bulk transitions)
             // will take far longer than the normal timestamp.  For those,
             // just duplicate the timestamp so eg. a 180 ms sample is
             // reported twice, a 270 ms sample is reported thrice, etc...
-            const repeats = Math.ceil(s.ts / 99);
+            const repeats = Math.round(s.ts / 99);
+
+            if (repeats <= 1) {
+                return [s]
+            }
+
             const ret: Sample[] = [];
             for (let i = 0; i < repeats; i++) {
-                ret.push(s);
+                let clone = {...s}
+                clone["total_ts"] -= (repeats - i) * 50
+                ret.push(clone);
             }
-            return ret;
+            return ret
         });
     }
 
