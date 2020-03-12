@@ -37,19 +37,19 @@ export const WorkloadSliders = (props: Props) => {
         <div className="container flex-direction=column">
             <div>
                 indel
-                <input type="range" min="0.0" max="1.0" step="0.1" 
+                <input type="range" min="0.0" max="1.0" step="0.25" 
                     value={props.workload.indel}
                     onChange={(e) => onIndelUpdate(e.target.valueAsNumber)} />
             </div>
             <div>
                 range
-                <input type="range" min="0.0" max="1.0" step="0.1" 
+                <input type="range" min="0.0" max="1.0" step="0.25" 
                     value={props.workload.range}
                     onChange={(e) => onRangeUpdate(e.target.valueAsNumber)} />
             </div>
             <div>
                 reads
-                <input type="range" min="0.0" max="1.0" step="0.1" 
+                <input type="range" min="0.0" max="1.0" step="0.25" 
                     value={1 - (props.workload.range + props.workload.indel)}/>
             </div>
         </div>

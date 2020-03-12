@@ -28,7 +28,15 @@ export class SampleIterator {
             const ret: Sample[] = [];
             for (let i = 0; i < repeats; i++) {
                 const clone = {...s};
-                clone["total_ts"] -= (repeats - i) * 50;
+
+                //TODO(nathan): not sure what to do with latency here.  Seems
+                //appropriate to leave it as-is?  The intention here is jsut to
+                //normalise out the xput over the repeated samples.
+                clone.xput /= repeats;
+                clone.ops /= repeats;
+
+                //Give us at least something like a proper total ordering.
+                clone["total_ts"] -= (repeats - i);
                 ret.push(clone);
             }
             return ret;
