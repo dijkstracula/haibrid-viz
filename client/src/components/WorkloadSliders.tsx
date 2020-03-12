@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as d3 from 'd3';
 import { Workload } from '../interfaces';
 
 type Changed = "indel" | "range"
@@ -34,21 +33,21 @@ export const WorkloadSliders = (props: Props) => {
     }
 
     return (
-        <div className="container flex-direction=column">
+        <div className="container flex-direction=column workload-sliders">
             <div>
-                indel
+                Inserts/Deletes
                 <input type="range" min="0.0" max="1.0" step="0.25" 
                     value={props.workload.indel}
                     onChange={(e) => onIndelUpdate(e.target.valueAsNumber)} />
             </div>
             <div>
-                range
+                Range reads
                 <input type="range" min="0.0" max="1.0" step="0.25" 
                     value={props.workload.range}
                     onChange={(e) => onRangeUpdate(e.target.valueAsNumber)} />
             </div>
             <div>
-                reads
+                Point reads
                 <input type="range" min="0.0" max="1.0" step="0.25" 
                     value={1 - (props.workload.range + props.workload.indel)}/>
             </div>

@@ -1,16 +1,20 @@
 body {
-  font: 14px "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
-  color: #606c76;
+  font: 18px "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+  color: #303c56;
   margin: 0;
 }
 
 .container {
-  padding: 25px 25px 25px 25px;
+  padding: 5px;
 }
 
 .line {
   fill: none;
   stroke-width: 2px;
+}
+
+.workload-sliders div {
+  padding: 10px;
 }
 
 header {
@@ -31,6 +35,7 @@ h1 {
 
 h2 {
   text-align: center;
+  margin: 0;
 }
 
 .App {

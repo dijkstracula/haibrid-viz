@@ -30,8 +30,8 @@ export const XputLineGraph = (props: Props) => {
   const svg_x_axis = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
   const svg_y_axis = React.useRef() as React.MutableRefObject<any>; //TODO: ugh
 
-  const margin = {top: 20, right: 50, bottom: 20, left: 50}
-  const width = 640 - margin.left - margin.right
+  const margin = {top: 20, right: 50, bottom: 20, left: 100}
+  const width = 800 - margin.left - margin.right
   const height = 300 - margin.top - margin.bottom
 
   let x = d3.scaleLinear().range([0, width - margin.right - 20])
@@ -51,19 +51,19 @@ export const XputLineGraph = (props: Props) => {
       ) as number) || 10**7
     ])
     .nice()
-
-    // Draw axes
-    d3.select(svg_x_axis.current)
-      .call(d3.axisBottom(x).tickFormat((x) => ""));
-    d3.select(svg_y_axis.current)
-      .call(d3.axisLeft(y));
-
-    // Label axes
-
+    
     const line = d3.line<Sample>()
       .x((_,i) => x(i))
       .y((s) => y(s.xput))
 
+    // Draw axes
+    d3.select(svg_x_axis.current)
+      .call(d3.axisBottom(x).tickFormat((x) => ""));
+
+    d3.select(svg_y_axis.current)
+      .call(d3.axisLeft(y));
+
+    // Label axes
     d3.select(svg_chart.current)
       .selectAll("path")
       .remove()
@@ -100,7 +100,7 @@ export const XputLineGraph = (props: Props) => {
         .attr("dy", ".35em")
         .attr("text-anchor", "start")
         .attr("fill", helpers.colour_for_ds(ds))
-        .text(helpers.name_for_ds(ds))
+        .text(helpers.short_name_for_ds(ds))
     }
 
     d3.select(svg_chart.current)
@@ -119,6 +119,9 @@ export const XputLineGraph = (props: Props) => {
           <g ref={svg_x_axis} transform={`translate(${margin.left}, ${height})`}>
           </g>
           <g ref={svg_y_axis} transform={`translate(${margin.left}, 0)`}>
+            <text text-anchor="middle" 
+                  fill="black" 
+                  transform={`translate(-40,${height/2})rotate(-90)`}>ops/s</text>
           </g>
         </svg>
       </svg>

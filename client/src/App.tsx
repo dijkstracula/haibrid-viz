@@ -127,19 +127,6 @@ export default class App extends Component<{}, AppState> {
         <div className="App">
           <div className="container flex-direction=column">
             <div>
-              <h2>Throughput</h2>
-              <XputLineGraph
-                samples={this.state.samples}
-                actives={this.state.actives}
-              />
-            </div>
-            <div>
-              <h2>Substructure</h2>
-              <ArcsetHistogram arcs={this.state.arcset} />
-            </div>
-          </div>
-          <div className="container flex-direction=column">
-            <div>
               <h2>Workload</h2>
               <WorkloadSliders
                 workload={this.state.workload}
@@ -154,19 +141,33 @@ export default class App extends Component<{}, AppState> {
             </div>
           </div>
           <div className="container flex-direction=column">
+            <div>
+              <h2>Throughput</h2>
+              <XputLineGraph
+                samples={this.state.samples}
+                actives={this.state.actives}
+              />
+            </div>
+            <div>
+              <h2>Substructure</h2>
+              <ArcsetHistogram arcs={this.state.arcset} />
+            </div>
+          </div>
+          <div className="container flex-direction=column">
             <h2>Description</h2>
             <p>This demo shows a HAIbrid index structure in action. 
-              HAIbrid tries to achieve universally good performance regardless of the workload by 
-              dynamically transitioning between optimal structures (learned offline). Try changing 
-              the workload parameters on the left and watch HAIbrid switch from one structure to 
-              another!
+              HAIbrid tries to achieve universally good performance
+              regardless of workload by dynamically transitioning between
+              optimal structures, learned offline.
             </p>
             <p>
-              For example, when there are a number of range queries in the workload, the HAIbrid
-              data structure ensures that it remains ordered (in this case, our offline learning
-              algorithm decided upon a B-Tree rather than the also-available skiplist).  When 
-              the workload shifts to only point queries, the HAIbrid structure relaxes ordering
-              for better performance, discards ordering information, and migrates to a hashtable.
+              For example, when the workload contains range queries, HAIbrid
+              ensures that all underlying structures can efficiently iterate
+              in order of keys (in this case, our classifier chose a
+              B-Tree rather than the also-available skiplist). When the
+              workload shifts exclusively to point queries, the HAIbrid relaxes
+              ordering for better performance and internally migrates to a
+              hashtable.
             </p>
           </div>
         </div>

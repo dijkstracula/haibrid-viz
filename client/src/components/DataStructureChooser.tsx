@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as d3 from 'd3';
 import * as helpers from './helpers'
 
 interface Props {
@@ -12,9 +11,8 @@ function inputsFromProps(props: Props): JSX.Element[] {
     let actives = new Set<string>(props.actives)
     return props.structures.map((s: string) => {
         return (
-            <li>
+            <div>
             <label>
-                {helpers.name_for_ds(s)}
                 <input 
                     type="checkbox"
                     checked={actives.has(s)}
@@ -28,13 +26,14 @@ function inputsFromProps(props: Props): JSX.Element[] {
                     }}
                 >
                 </input>
+                {helpers.name_for_ds(s)}
             </label>
-            </li>)
+            </div>)
     })
 }
 export const DataStructureChooser = (props: Props) => {
     return (
-        <div>
+        <div className="container flex-direction=row">
             {inputsFromProps(props)}
         </div>
     )

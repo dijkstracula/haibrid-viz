@@ -5,7 +5,21 @@ export function name_for_ds(ds: string) {
         case "split":
             return "HAIbrid"
         case "hs_hash":
-            return "Hash Table"
+            return "Hopscotch hash"
+        case "google_btree":
+            return "B-Tree"
+        case "skiplist":
+            return "Skiplist"
+    }
+    return "???"
+}
+
+export function short_name_for_ds(ds: string) {
+    switch (ds) {
+        case "split":
+            return "HAIbrid"
+        case "hs_hash":
+            return "HS hash"
         case "google_btree":
             return "B-Tree"
         case "skiplist":
